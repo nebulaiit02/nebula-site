@@ -1,0 +1,25 @@
+
+:root {
+  /* ===== Background Colors ===== */
+  --color-bg-primary: #0B0416;     /* Main dark page background */
+  --color-bg-card: #FFFFFF;        /* Card and section background */
+  --color-bg-input: #1A1A1A;       /* Input fields background */
+
+  /* ===== Brand & Accent Colors ===== */
+  --color-primary: #B625FB;        /* Primary brand purple */
+  --color-secondary: #FF00A5;      /* Secondary accent pink */
+  --color-gradient: linear-gradient(90deg, #B625FB, #FF00A5); /* Brand gradient */
+
+  /* ===== Text Colors ===== */
+  --color-text-primary: #FFFFFF;   /* Main text color */
+  --color-text-secondary: #CFCFCF; /* Secondary/subtle text color */
+
+  /* ===== Button Colors ===== */
+  --color-btn-primary: #FF00A5;    /* Button default background */
+  --color-btn-hover: #B625FB;      /* Button hover background */
+
+  /* ===== Borders & Shadows ===== */
+  --color-border: #3A3A3A;         /* Borders for cards/inputs */
+  --shadow-light: rgba(255, 255, 255, 0.1); /* Light shadow effect */
+  --shadow-dark: rgba(0, 0, 0, 0.3);       /* Dark shadow effect */
+}

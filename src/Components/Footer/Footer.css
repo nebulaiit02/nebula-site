@@ -1,5 +1,6 @@
 .footer {
   width: 100%;
+  padding: 2% 5%;
   background: #1e0f2c; /* dark purple */
   color: #fff;
   font-family: "Poppins", Arial, sans-serif;
@@ -57,7 +58,6 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 
@@ -95,8 +95,9 @@ hr {
 .footer-social {
   display: flex;
   justify-content: center;
+
   gap: 20px;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 .footer-social svg {

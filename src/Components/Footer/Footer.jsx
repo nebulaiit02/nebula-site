@@ -5,7 +5,6 @@ import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react
 const Footer = () => {
   return (
     <footer className="footer">
-      {/* Newsletter */}
       <div className="newsletter">
         <p>Join our newsletter to keep up to date with us!</p>
         <div className="newsletter-form">
@@ -16,7 +15,6 @@ const Footer = () => {
 
       <hr />
 
-      {/* Footer main content */}
       <div className="footer-main">
         <div className="footer-logo">NEBULA IIT</div>
 
@@ -32,16 +30,16 @@ const Footer = () => {
           <a href="#">Terms of Service</a>
           <p>© 2023 NebulaIIT</p>
         </div>
+        <div className="footer-social">
+          <FaLinkedin />
+          <FaFacebook />
+          <FaTwitter />
+          <FaInstagram />
+          <FaYoutube />
+        </div>
       </div>
 
-      {/* Social Icons */}
-      <div className="footer-social">
-        <FaLinkedin />
-        <FaFacebook />
-        <FaTwitter />
-        <FaInstagram />
-        <FaYoutube />
-      </div>
+
     </footer>
   );
 };

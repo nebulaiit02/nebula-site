@@ -1,53 +1,44 @@
-
 .navbar {
-  /* position: fixed;    
-  top: 0;
-  left: 0; */
-  width: 100%;   
-  height: 50px;
-  /* padding: 10px;    */
-    background-color: var(--color-bg-primary);   /* Dark purple background */
+  width: 100%;
+  height: 80px;
+  padding: 0 5%;
+  background-color: var(--color-bg-primary); 
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-
-/* Left + Right sections */
-.nav-left,
-.nav-right {
+.navbar .nav-left,
+.navbar .nav-right {
   display: flex;
+  justify-content: space-evenly;
   gap: 25px;
 }
 
-/* Links */
-.nav-left a,
-.nav-right a {
+.nav-left .nav-link,
+.nav-right .nav-link {
   color: #fff;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 1.2rem;
   font-weight: 400;
   transition: all 0.3s ease;
 }
 
-/* Active link (Home underline) */
 .active {
   border-bottom: 2px solid #fff;
   padding-bottom: 2px;
   font-weight: 500;
 }
 
-/* Hover effect */
-.nav-left a:hover,
-.nav-right a:hover {
+.nav-left .nav-link:hover,
+.nav-right .nav-link:hover {
   border-bottom: 2px solid #fff;
   padding-bottom: 2px;
 }
 
-/* Center logo */
 .nav-center {
   font-weight: bold;
   color: #fff;
-  font-size: 16px;
+  font-size: 1.8rem;
   letter-spacing: 1.5px;
 }

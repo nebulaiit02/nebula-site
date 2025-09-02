@@ -51,9 +51,10 @@ const ProductsPage = () => {
           </a>
           <h3 className="product-description-title">Product Description</h3>
           <div className="product-description">
-            {product.description.map((text, i) => (
+            {/* {product.description.map((text, i) => (
               <p key={i}>{text}</p>
-            ))}
+            ))} */}
+            <p>{product.description}</p>
           </div>
         </section>
       ))}

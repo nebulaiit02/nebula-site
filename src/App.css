@@ -23,3 +23,26 @@
   --shadow-light: rgba(255, 255, 255, 0.1); /* Light shadow effect */
   --shadow-dark: rgba(0, 0, 0, 0.3);       /* Dark shadow effect */
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  /* background-color: var(--color-bg-primary); */
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

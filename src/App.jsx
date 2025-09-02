@@ -1,16 +1,20 @@
 import React from "react";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
+import './App.css'
 
 function App() {
   return (
-    <div>
+
+    <BrowserRouter>
       <Header />
-      <div style={{ height: "80vh", background: "linear-gradient(#8e2de2, #c94b4b)" }}>
-        {/* Demo content */}
-      </div>
+      <Routes>
+
+      </Routes>
+
       <Footer />
-    </div>
+    </BrowserRouter>
+
   );
 }
 

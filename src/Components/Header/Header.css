@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  padding-top: 70px;  /* adjust to navbar height */
+}
+/*
+/* Navbar container */
+.navbar {
+  position: fixed;       /* stay fixed at the top */
+  top: 0;
+  left: 0;
+  width: 90%;           /* full width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #12021A;   /* Dark purple background */
+  padding: 15px 50px;
+  z-index: 1000;         /* stay above other content */
+}
+
+
+/* Left + Right sections */
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 25px;
+}
+
+/* Links */
+.nav-left a,
+.nav-right a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+/* Active link (Home underline) */
+.active {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 2px;
+  font-weight: 500;
+}
+
+/* Hover effect */
+.nav-left a:hover,
+.nav-right a:hover {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 2px;
+}
+
+/* Center logo */
+.nav-center {
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}

@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import ServicePage from "./pages/Service/ServicePage";
 import HomePage from "./pages/Home/HomePage";
+import AboutPage from "./Pages/AboutUs/About";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Contact-page" element={<ContactPage />} />
         <Route path="/product/:id" element={<ProductDetailsPage />} />
         <Route path="/service-area" element={<ServicePage />} />
+        <Route path="/AboutUs-page" element={<AboutPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

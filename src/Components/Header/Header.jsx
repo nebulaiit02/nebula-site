@@ -24,7 +24,7 @@ const Header = () => {
       <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
         <div className="nav-menu">
           <Link to="/" className="nav-link active" onClick={handleLinkClick}>Home</Link>
-          <Link to="/about" className="nav-link" onClick={handleLinkClick}>About Us</Link>
+          <Link to="/AboutUs-page" className="nav-link" onClick={handleLinkClick}>AboutUs</Link>
           <Link to="/Service-area" className="nav-link" onClick={handleLinkClick}>Services</Link>
           <Link to="/contact" className="nav-link" onClick={handleLinkClick}>Contact Us</Link> 
           <Link to="/product-page" className="nav-link" onClick={handleLinkClick}>Products</Link>

@@ -1,19 +1,18 @@
 .navbar-wrapper {
   width: 100%;
-  padding: 2% 5%;
+  padding: 1% 5%;
   background-color: var(--color-bg-primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+ 
 }
 
 /* Logo */
 .nav-logo {
   font-weight: bold;
   color: #fff;
-  font-size: 1.6rem;
-  letter-spacing: 1.2px;
+  font-size: 2rem;
 }
 
 /* Nav links (default desktop) */

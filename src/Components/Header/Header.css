@@ -2,43 +2,114 @@
   width: 100%;
   height: 80px;
   padding: 0 5%;
-  background-color: var(--color-bg-primary); 
+  background-color: var(--color-bg-primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
-.navbar .nav-left,
-.navbar .nav-right {
+/* Logo */
+.nav-logo {
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: 1.2px;
+}
+
+/* Nav links (default desktop) */
+.nav-links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-left, .nav-right {
+  display: flex;
   gap: 25px;
 }
 
-.nav-left .nav-link,
-.nav-right .nav-link {
+.nav-link {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 400;
   transition: all 0.3s ease;
 }
 
+.nav-link:hover,
 .active {
   border-bottom: 2px solid #fff;
   padding-bottom: 2px;
   font-weight: 500;
 }
 
-.nav-left .nav-link:hover,
-.nav-right .nav-link:hover {
-  border-bottom: 2px solid #fff;
-  padding-bottom: 2px;
+/* Hamburger Button (hidden by default) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  position: absolute;
+  top: 25px;
+  right: 20px;
 }
 
-.nav-center {
-  font-weight: bold;
-  color: #fff;
-  font-size: 1.8rem;
-  letter-spacing: 1.5px;
+.hamburger .line {
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Hamburger Animation */
+.hamburger .line.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.hamburger .line.open:nth-child(2) {
+  opacity: 0;
+}
+.hamburger .line.open:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+/* Mobile View (≤768px) */
+@media (max-width: 768px) {
+  
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: var(--color-bg-primary);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transition: height 0.3s ease;
+  }
+
+  .nav-links.active {
+    height: 260px; /* expand when menu is active */
+  }
+
+  .nav-left, .nav-right {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Tablet & Desktop (>768px) */
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex;
+  }
 }

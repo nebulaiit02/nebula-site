@@ -102,8 +102,10 @@ const ProductDetailPage = () => {
           {product.gallery.map((img, i) => (
             <div key={i} className="gallery-item">
 
-              <div className="gallery-img"><img src={img} alt={`gallery-${i}`} /></div>
-              <div><p>Description of img</p></div>
+              <div className="gallery-img">
+                <img src={img} alt={`gallery-${i+1}`} />
+              </div>
+              <p>Description of img</p>
               
             </div>
             

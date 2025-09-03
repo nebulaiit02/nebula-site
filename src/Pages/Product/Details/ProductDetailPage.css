@@ -1,0 +1,250 @@
+/* === GLOBAL PAGE === */
+.product-detail-page {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+
+}
+
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 100%; 
+  height: 80vh;
+  min-height: 280px;
+  background-color: var(--color-bg-card);
+  border-radius: 12px;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 4px 10px var(--shadow-dark);
+  object-fit: cover;
+  display: block; 
+}
+
+.btn-link {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--color-btn-primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-link:hover {
+  background: var(--color-btn-hover);
+}
+
+
+.description-section {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* === FEATURES SECTION === */
+.features-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem 0;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.features-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.text-block {
+  flex: 1;
+  max-width: 500px;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+.image-block {
+  flex: 1;
+  min-height: 300px;
+  background-color: var(--color-bg-card);
+  border-radius: 16px;
+  box-shadow: 0 6px 12px var(--shadow-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* === TESTIMONIALS SECTION === */
+.testimonials-section {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.testimonials-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.testimonial-card {
+  background: var(--color-bg-card);
+  color: #000;
+  padding: 1rem;
+  border-radius: 16px;
+  min-height: 150px;
+  width: 220px;
+  box-shadow: 0 4px 8px var(--shadow-dark);
+}
+
+/* === GALLERY SECTION === */
+.gallery-section {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.gallery-item img {
+  background: var(--color-bg-card);
+  color: #000;
+  padding: 0.8rem;
+  border-radius: 12px;
+  min-width: 200px;
+  min-height: 150px;
+  text-align: center;
+  box-shadow: 0 4px 8px var(--shadow-dark);
+  object-fit: cover;
+  width: 100%;
+  max-width: 250px;
+}
+
+/* ======================
+   RESPONSIVE DESIGN
+====================== */
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .product-detail-page {
+    padding: 1rem;
+  }
+
+  .hero-image {
+    height: 40vh; /* 🔥 Adjusted for small screens */
+  }
+
+  .description-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .features-section,
+  .features-section.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-block {
+    max-width: 100%;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .image-block {
+    width: 100%;
+    min-height: 200px;
+  }
+
+  .testimonial-card {
+    width: 100%;
+  }
+
+  .gallery-item img {
+    min-width: 140px;
+    min-height: 120px;
+    max-width: 100%;
+  }
+}
+
+/* Large Mobile / Small Tablet (481px - 767px) */
+@media (max-width: 767px) {
+  .features-section,
+  .features-section.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-block {
+    min-height: 220px;
+  }
+
+  .testimonial-card {
+    width: 90%;
+  }
+
+  .gallery-item img {
+    min-width: 160px;
+  }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+  .hero-image {
+    height: 55vh;
+  }
+
+  .text-block {
+    font-size: 0.95rem;
+  }
+
+  .testimonial-card {
+    width: 45%;
+  }
+}
+
+/* Laptops (992px - 1200px) */
+@media (max-width: 1200px) {
+  .hero-image {
+    height: 65vh;
+  }
+}
+
+/* Big Screens (1201px and up) */
+@media (min-width: 1201px) {
+  .product-detail-page {
+    padding: 3rem 5rem;
+  }
+}

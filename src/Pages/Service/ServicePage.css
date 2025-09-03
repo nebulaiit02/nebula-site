@@ -1,0 +1,143 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0D0B16;
+  color: white;
+}
+
+.service-page {
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 15px 40px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #ccc;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Hero */
+.hero {
+  padding: 60px 80px;
+}
+
+.hero h2 {
+  font-size: 28px;
+  font-weight: bold;
+  max-width: 800px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Features Section */
+.features {
+  padding: 60px 80px;
+}
+
+.features h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.features p {
+  max-width: 500px;
+  margin: 8px 0;
+}
+
+.features .image-box.large {
+  margin-top: 30px;
+  width: 100%;
+  height: 250px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Features List Section */
+.features-list {
+  padding: 60px 80px;
+}
+
+.features-list h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.list-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.list-content .text-left {
+  flex: 1;
+}
+
+.list-content .text-left p {
+  margin: 10px 0;
+}
+
+.list-content .image-box.medium {
+  flex: 1;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+    text-align: center;
+  padding: 60px 80px;
+}
+
+.testimonials h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.testimonials .cards {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.testimonials .card {
+  flex: 1;
+  height: 150px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.testimonials .card-texts {
+  display: flex;
+  gap: 30px;
+}
+
+.testimonials .card-texts p {
+  flex: 1;
+  font-size: 14px;
+  color: #ccc;
+}

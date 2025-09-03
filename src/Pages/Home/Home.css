@@ -1,0 +1,103 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body { height: 100%; }
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0f0f16;
+  color: #fff;
+  overflow-x: hidden; /* prevent sideways scroll from full-bleed */
+}
+
+/* A nice, readable content width for inner sections */
+:root { --container: min(1200px, 92vw); }
+
+/* Ensure the page wrapper itself isn't constraining width */
+.home, #root, main { width: 100%; }
+
+/* ---------- HERO (true full-bleed) ---------- */
+.hero {
+  background: linear-gradient(180deg, #BD01BB 0%, #FB00FF 35%, #570056 100%);
+  /* break out of any parent max-width to span the viewport */
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+
+  min-height: 58vh;                /* visible on the whole screen */
+  padding: clamp(48px, 8vh, 120px) 20px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.hero > * { width: var(--container); }  /* center inner content */
+
+.hero h1 { font-size: clamp(5rem, 5.6vw, 6rem); font-weight: 700; }
+.hero p  { margin: 15px 0; font-size: 4.1rem; }
+
+.btn-primary {
+  background: #fff; color: #491f7e;
+  padding: 24px 48px; border: none; border-radius: 25px;
+  cursor: pointer; font-weight: 600; margin-top: 14px;
+}
+
+.tech-icons {
+  margin-top: 28px; display: flex; justify-content: center; gap: 20px;
+}
+.tech-icons img { width: 95px; height: 80px; }
+
+/* ---------- CENTERED SECTIONS ---------- */
+.section,
+.pricing,
+.testimonial,
+.team,
+.footer { width: var(--container); margin-inline: auto; }
+
+/* Pricing */
+.pricing { padding: 64px 0; text-align: center; }
+.pricing h2 { font-size: clamp(2.6rem, 3.4vw, 3rem); margin-bottom: 28px; }
+
+.pricing-cards {
+  display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;
+}
+.card {
+  width: clamp(180px, 24vw, 220px);
+  height: clamp(160px, 22vw, 200px);
+  background: #fff; border-radius: 15px;
+}
+.note { margin-top: 18px; font-size: 1rem; color: #ddd; }
+
+/* Testimonial */
+.testimonial {
+  padding: 64px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 32px;
+}
+.testimonial-box {
+  width: clamp(220px, 28vw, 260px);
+  height: clamp(200px, 26vw, 240px);
+  background: #fff; border-radius: 12px;
+}
+.testimonial-text { max-width: 520px; }
+.testimonial-text h3 { color: gold; margin-bottom: 10px; }
+.author { margin-top: 10px; font-style: italic; }
+
+/* Team */
+.team { text-align: center; padding: 64px 0; }
+.team h2 { font-size: clamp(1.6rem, 2.4vw, 2rem); margin-bottom: 10px; }
+.team p { color: #ccc; margin-bottom: 28px; }
+.team-members { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
+.member {
+  width: 110px; height: 110px; background: #fff; color: #000; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* Footer */
+.footer { padding: 56px 0; text-align: center; background: #211e30; width: 100%; }
+.footer h2 { margin-bottom: 18px; }
+.astronaut { width: 140px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pricing-cards { flex-direction: column; align-items: center; }
+  .testimonial { flex-direction: column; align-items: center; }
+  .team-members { flex-direction: column; }
+}

@@ -1,23 +1,21 @@
-/* === GLOBAL PAGE === */
-.product-detail-page {
+
+.pdp-container {
   background: var(--color-bg-primary);
   color: var(--color-text-primary);
   padding: 2rem;
   font-family: Arial, sans-serif;
   width: 100%;
-
-
 }
 
-
-.hero-section {
+/* HERO SECTION */
+.pdp-hero {
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.hero-image {
+.pdp-hero-image {
   width: 100%;
-  max-width: 100%; 
+  max-width: 100%;
   height: 80vh;
   min-height: 280px;
   background-color: var(--color-bg-card);
@@ -25,13 +23,13 @@
   margin: 0 auto 20px auto;
   box-shadow: 0 4px 10px var(--shadow-dark);
   object-fit: cover;
-  display: block; 
+  display: block;
 }
 
-.btn-link {
+.pdp-btn-link {
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
-  background: var(--color-btn-primary);
+  background: var(--color-gradient);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -40,12 +38,12 @@
   transition: background 0.3s ease;
 }
 
-.btn-link:hover {
+.pdp-btn-link:hover {
   background: var(--color-btn-hover);
 }
 
-
-.description-section {
+/* DESCRIPTION */
+.pdp-description {
   text-align: center;
   margin-bottom: 3rem;
   max-width: 800px;
@@ -53,13 +51,13 @@
   margin-right: auto;
 }
 
-.description-section h2 {
+.pdp-description h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
-/* === FEATURES SECTION === */
-.features-section {
+/* FEATURES */
+.pdp-features {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -69,11 +67,11 @@
   width: 100%;
 }
 
-.features-section.reverse {
+.pdp-features-reverse {
   flex-direction: row-reverse;
 }
 
-.text-block {
+.pdp-text-block {
   flex: 1;
   max-width: 500px;
   font-size: 1rem;
@@ -81,7 +79,7 @@
   padding: 1rem;
 }
 
-.image-block {
+.pdp-image-block {
   flex: 1;
   min-height: 300px;
   background-color: var(--color-bg-card);
@@ -94,20 +92,15 @@
   width: 100%;
 }
 
-.image-block img {
+.pdp-image-block img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 16px;
 }
 
-/* === TESTIMONIALS SECTION === */
-.testimonials-section {
-  text-align: center;
-  margin: 4rem 0;
-}
-
-.testimonials-grid {
+/* TESTIMONIALS */
+.pdp-testimonials-grid {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
@@ -115,23 +108,60 @@
   margin-top: 1.5rem;
 }
 
-.testimonial-card {
-  background: var(--color-bg-card);
-  color: #000;
-  padding: 1rem;
-  border-radius: 16px;
-  min-height: 150px;
-  width: 220px;
-  box-shadow: 0 4px 8px var(--shadow-dark);
+.pdp-testimonials-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 
-/* === GALLERY SECTION === */
-.gallery-section {
+.pdp-testimonial-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 220px;
+}
+
+.pdp-testimonial-card {
+  background: var(--color-bg-card);
+  border-radius: 16px;
+  width: 100%;
+  height: 120px;
+  aspect-ratio: 1/1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px var(--shadow-dark);
+  overflow: hidden;
+}
+
+.pdp-testimonial-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pdp-testimonial-caption {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: var(--color-text-primary);
+  font-weight: 500;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+/* GALLERY */
+.pdp-gallery {
   text-align: center;
   margin-bottom: 4rem;
 }
 
-.gallery-grid {
+.pdp-gallery-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.pdp-gallery-grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -139,112 +169,46 @@
   margin-top: 1.5rem;
 }
 
-.gallery-item img {
+.pdp-gallery-item img {
   background: var(--color-bg-card);
-  color: #000;
   padding: 0.8rem;
   border-radius: 12px;
   min-width: 200px;
   min-height: 150px;
-  text-align: center;
   box-shadow: 0 4px 8px var(--shadow-dark);
   object-fit: cover;
   width: 100%;
   max-width: 250px;
 }
 
-/* ======================
-   RESPONSIVE DESIGN
-====================== */
-
-/* Small Mobile (max-width: 480px) */
+/* RESPONSIVE */
 @media (max-width: 480px) {
-  .product-detail-page {
-    padding: 1rem;
-  }
-
-  .hero-image {
-    height: 40vh; /* 🔥 Adjusted for small screens */
-  }
-
-  .description-section h2 {
-    font-size: 1.3rem;
-  }
-
-  .features-section,
-  .features-section.reverse {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .text-block {
-    max-width: 100%;
-    padding: 0.5rem;
-    font-size: 0.9rem;
-  }
-
-  .image-block {
-    width: 100%;
-    min-height: 200px;
-  }
-
-  .testimonial-card {
-    width: 100%;
-  }
-
-  .gallery-item img {
-    min-width: 140px;
-    min-height: 120px;
-    max-width: 100%;
-  }
+  .pdp-container { padding: 1rem; }
+  .pdp-hero-image { height: 40vh; }
+  .pdp-description h2 { font-size: 1.3rem; }
+  .pdp-features, .pdp-features-reverse { flex-direction: column; text-align: center; }
+  .pdp-text-block { max-width: 100%; padding: 0.5rem; font-size: 0.9rem; }
+  .pdp-image-block { min-height: 200px; }
+  .pdp-testimonial-card { width: 100%; }
+  .pdp-testimonial-wrapper { width: 80%; }
+  .pdp-gallery-item img { min-width: 140px; min-height: 120px; }
 }
 
-/* Large Mobile / Small Tablet (481px - 767px) */
 @media (max-width: 767px) {
-  .features-section,
-  .features-section.reverse {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .image-block {
-    min-height: 220px;
-  }
-
-  .testimonial-card {
-    width: 90%;
-  }
-
-  .gallery-item img {
-    min-width: 160px;
-  }
+  .pdp-features, .pdp-features-reverse { flex-direction: column; }
+  .pdp-image-block { min-height: 220px; }
+  .pdp-testimonial-wrapper { width: 45%; }
+  .pdp-gallery-item img { min-width: 160px; }
 }
 
-/* Tablets (768px - 991px) */
 @media (max-width: 991px) {
-  .hero-image {
-    height: 55vh;
-  }
-
-  .text-block {
-    font-size: 0.95rem;
-  }
-
-  .testimonial-card {
-    width: 45%;
-  }
+  .pdp-hero-image { height: 55vh; }
 }
 
-/* Laptops (992px - 1200px) */
 @media (max-width: 1200px) {
-  .hero-image {
-    height: 65vh;
-  }
+  .pdp-hero-image { height: 65vh; }
 }
 
-/* Big Screens (1201px and up) */
 @media (min-width: 1201px) {
-  .product-detail-page {
-    padding: 3rem 5rem;
-  }
+  .pdp-container { padding: 3rem 5rem; }
 }

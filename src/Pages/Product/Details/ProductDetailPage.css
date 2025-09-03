@@ -6,10 +6,9 @@
   font-family: Arial, sans-serif;
   width: 100%;
   overflow-x: hidden;
-  /* box-sizing: border-box; */
 }
 
-/* === HERO SECTION === */
+
 .hero-section {
   text-align: center;
   margin-bottom: 3rem;
@@ -44,7 +43,7 @@
   background: var(--color-btn-hover);
 }
 
-/* === DESCRIPTION SECTION === */
+
 .description-section {
   text-align: center;
   margin-bottom: 3rem;

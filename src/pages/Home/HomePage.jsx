@@ -1,11 +1,11 @@
 import React from "react";
 import "./Home.css";
 
-function Home() {
+function HomePage() {
   return (
-    <div className="home">
-      {/* Hero Section */}
-      <header className="hero">
+    <div className="home-wrapper">
+     
+      <div className="hero">
         <div className="hero-content">
           <h1>
             Amazing Websites,
@@ -39,9 +39,8 @@ function Home() {
             alt="CSS3"
           />
         </div>
-      </header>
+      </div>
 
-      {/* Pricing Section */}
       <section className="pricing">
         <h2>Flexible Pricing For All Budgets</h2>
         <div className="pricing-cards">
@@ -56,7 +55,6 @@ function Home() {
         </p>
       </section>
 
-      {/* Testimonial */}
       <section className="testimonial">
         <div className="testimonial-box"></div>
         <div className="testimonial-text">
@@ -69,7 +67,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Team Section */}
       <section className="team">
         <h2>Our Creative Minds</h2>
         <p>
@@ -89,4 +86,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;

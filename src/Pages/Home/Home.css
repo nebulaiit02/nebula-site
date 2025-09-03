@@ -1,36 +1,17 @@
-/* Reset */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-html, body { height: 100%; }
-body {
-  font-family: "Poppins", sans-serif;
-  background: #0f0f16;
-  color: #fff;
-  overflow-x: hidden; /* prevent sideways scroll from full-bleed */
+.home-wrapper{
+  width: 100%;
+  background-color: #000;
+  color: whitesmoke;
 }
 
-/* A nice, readable content width for inner sections */
-:root { --container: min(1200px, 92vw); }
-
-/* Ensure the page wrapper itself isn't constraining width */
-.home, #root, main { width: 100%; }
-
-/* ---------- HERO (true full-bleed) ---------- */
 .hero {
   background: linear-gradient(180deg, #BD01BB 0%, #FB00FF 35%, #570056 100%);
-  /* break out of any parent max-width to span the viewport */
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  width: 100vw;
-
-  min-height: 58vh;                /* visible on the whole screen */
-  padding: clamp(48px, 8vh, 120px) 20px;
+  width: 100%;
+  padding: 5%;
+  min-height: 58vh;               
   display: grid;
-  place-items: center;
   text-align: center;
 }
-
-.hero > * { width: var(--container); }  /* center inner content */
 
 .hero h1 { font-size: clamp(5rem, 5.6vw, 6rem); font-weight: 700; }
 .hero p  { margin: 15px 0; font-size: 4.1rem; }
@@ -46,12 +27,11 @@ body {
 }
 .tech-icons img { width: 95px; height: 80px; }
 
-/* ---------- CENTERED SECTIONS ---------- */
-.section,
+
+
 .pricing,
 .testimonial,
-.team,
-.footer { width: var(--container); margin-inline: auto; }
+.team{ width: var(--container); margin-inline: auto; }
 
 /* Pricing */
 .pricing { padding: 64px 0; text-align: center; }
@@ -90,10 +70,7 @@ body {
   display: flex; align-items: center; justify-content: center;
 }
 
-/* Footer */
-.footer { padding: 56px 0; text-align: center; background: #211e30; width: 100%; }
-.footer h2 { margin-bottom: 18px; }
-.astronaut { width: 140px; }
+
 
 /* Responsive */
 @media (max-width: 768px) {

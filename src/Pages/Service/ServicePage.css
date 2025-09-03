@@ -1,42 +1,10 @@
-/* General */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #0D0B16;
-  color: white;
-}
 
 .service-page {
   width: 100%;
 }
 
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  padding: 15px 40px;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-}
-
-.navbar a:hover,
-.navbar a.active {
-  color: #ccc;
-}
-
-.logo {
-  font-weight: bold;
-  font-size: 18px;
-}
-
 /* Hero */
-.hero {
+.service-page .hero {
   padding: 60px 80px;
 }
 

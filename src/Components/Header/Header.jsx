@@ -1,28 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleLinkClick = () => {
+    setMenuOpen(false); 
+  };
+
   return (
-    <header className="navbar">
+    <header className="navbar-wrapper">
+      {/* Logo */}
+      <div className="nav-logo">NEBULA IIT</div>
 
-      <div className="nav-left">
-        <Link to="/Home-Page" className="nav-link active">Home</Link>
-        <Link to="/" className="nav-link">About Us</Link>
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        <span className={menuOpen ? "line open" : "line"}></span>
+        <span className={menuOpen ? "line open" : "line"}></span>
+        <span className={menuOpen ? "line open" : "line"}></span>
       </div>
 
-  
-      <div className="nav-center">
-        NEBULA IIT
-      </div>
-
-      <div className="nav-right">
-        <Link to="/" className="nav-link ">Services</Link>
-        <Link to="/Contact-Page" className="nav-link ">Contact Us</Link>
-        <Link to="/product-page" className="nav-link ">Products</Link>
-      </div>
-
-   
+      {/* Navigation Links */}
+      <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
+        <div className="nav-menu">
+          <Link to="/" className="nav-link active" onClick={handleLinkClick}>Home</Link>
+          <Link to="/about" className="nav-link" onClick={handleLinkClick}>About Us</Link>
+          <Link to="/Service-area" className="nav-link" onClick={handleLinkClick}>Services</Link>
+          <Link to="/contact" className="nav-link" onClick={handleLinkClick}>Contact Us</Link> 
+          <Link to="/product-page" className="nav-link" onClick={handleLinkClick}>Products</Link>
+        </div>
+      </nav>
     </header>
   );
 };

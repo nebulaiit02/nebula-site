@@ -1,5 +1,4 @@
-
-.pdp-container {
+.product-detail-page {
   background: var(--color-bg-primary);
   color: var(--color-text-primary);
   padding: 2rem;
@@ -8,12 +7,13 @@
 }
 
 /* HERO SECTION */
-.pdp-hero {
+.product-detail-page .hero {
   text-align: center;
   margin-bottom: 3rem;
+  background: var(--color-bg-primary);
 }
 
-.pdp-hero-image {
+.product-detail-page .hero .hero-image {
   width: 100%;
   max-width: 100%;
   height: 80vh;
@@ -26,7 +26,7 @@
   display: block;
 }
 
-.pdp-btn-link {
+.product-detail-page .hero .btn-link {
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
   background: var(--color-gradient);
@@ -38,12 +38,12 @@
   transition: background 0.3s ease;
 }
 
-.pdp-btn-link:hover {
+.product-detail-page .hero .btn-link:hover {
   background: var(--color-btn-hover);
 }
 
 /* DESCRIPTION */
-.pdp-description {
+.product-detail-page .description {
   text-align: center;
   margin-bottom: 3rem;
   max-width: 800px;
@@ -51,13 +51,13 @@
   margin-right: auto;
 }
 
-.pdp-description h2 {
+.product-detail-page .description h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
 /* FEATURES */
-.pdp-features {
+.product-detail-page .features {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,11 +67,11 @@
   width: 100%;
 }
 
-.pdp-features-reverse {
+.product-detail-page .features.reverse {
   flex-direction: row-reverse;
 }
 
-.pdp-text-block {
+.product-detail-page .features .text-block {
   flex: 1;
   max-width: 500px;
   font-size: 1rem;
@@ -79,7 +79,7 @@
   padding: 1rem;
 }
 
-.pdp-image-block {
+.product-detail-page .features .image-block {
   flex: 1;
   min-height: 300px;
   background-color: var(--color-bg-card);
@@ -92,7 +92,7 @@
   width: 100%;
 }
 
-.pdp-image-block img {
+.product-detail-page .features .image-block img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -100,7 +100,17 @@
 }
 
 /* TESTIMONIALS */
-.pdp-testimonials-grid {
+.product-detail-page .testimonials {
+  margin-top: 4rem;
+}
+
+.product-detail-page .testimonials .title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.product-detail-page .testimonials .grid {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
@@ -108,26 +118,21 @@
   margin-top: 1.5rem;
 }
 
-.pdp-testimonials-title {
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-.pdp-testimonial-wrapper {
+.product-detail-page .testimonials .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 220px;
+  height: 250px; 
 }
 
-.pdp-testimonial-card {
+/* 🔥 FIXED HEIGHT FOR CARDS */
+.product-detail-page .testimonials .card {
   background: var(--color-bg-card);
   border-radius: 16px;
   width: 100%;
-  height: 120px;
-  aspect-ratio: 1/1.2;
+  height: 250px; /* 🔥 Unified height */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,33 +140,37 @@
   overflow: hidden;
 }
 
-.pdp-testimonial-img {
+/* Image inside card */
+.product-detail-page .testimonials .card .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.pdp-testimonial-caption {
+/* Caption with reserved height */
+.product-detail-page .testimonials .caption {
   margin-top: 0.5rem;
   font-size: 1rem;
   color: var(--color-text-primary);
   font-weight: 500;
   text-align: center;
   word-wrap: break-word;
+  min-height: 40px; /* 🔥 Reserve space for 2 lines */
 }
 
+
 /* GALLERY */
-.pdp-gallery {
+.product-detail-page .gallery {
   text-align: center;
   margin-bottom: 4rem;
 }
 
-.pdp-gallery-title {
+.product-detail-page .gallery .title {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
-.pdp-gallery-grid {
+.product-detail-page .gallery .grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -169,7 +178,7 @@
   margin-top: 1.5rem;
 }
 
-.pdp-gallery-item img {
+.product-detail-page .gallery .item img {
   background: var(--color-bg-card);
   padding: 0.8rem;
   border-radius: 12px;
@@ -183,32 +192,34 @@
 
 /* RESPONSIVE */
 @media (max-width: 480px) {
-  .pdp-container { padding: 1rem; }
-  .pdp-hero-image { height: 40vh; }
-  .pdp-description h2 { font-size: 1.3rem; }
-  .pdp-features, .pdp-features-reverse { flex-direction: column; text-align: center; }
-  .pdp-text-block { max-width: 100%; padding: 0.5rem; font-size: 0.9rem; }
-  .pdp-image-block { min-height: 200px; }
-  .pdp-testimonial-card { width: 100%; }
-  .pdp-testimonial-wrapper { width: 80%; }
-  .pdp-gallery-item img { min-width: 140px; min-height: 120px; }
+  .product-detail-page { padding: 1rem; }
+  .product-detail-page .hero .hero-image { height: 40vh; }
+  .product-detail-page .description h2 { font-size: 1.3rem; }
+  .product-detail-page .features,
+  .product-detail-page .features.reverse { flex-direction: column; text-align: center; }
+  .product-detail-page .features .text-block { max-width: 100%; padding: 0.5rem; font-size: 0.9rem; }
+  .product-detail-page .features .image-block { min-height: 200px; }
+  .product-detail-page .testimonials .card { width: 100%; }
+  .product-detail-page .testimonials .wrapper { width: 80%; }
+  .product-detail-page .gallery .item img { min-width: 140px; min-height: 120px; }
 }
 
 @media (max-width: 767px) {
-  .pdp-features, .pdp-features-reverse { flex-direction: column; }
-  .pdp-image-block { min-height: 220px; }
-  .pdp-testimonial-wrapper { width: 45%; }
-  .pdp-gallery-item img { min-width: 160px; }
+  .product-detail-page .features,
+  .product-detail-page .features.reverse { flex-direction: column; }
+  .product-detail-page .features .image-block { min-height: 220px; }
+  .product-detail-page .testimonials .wrapper { width: 45%; }
+  .product-detail-page .gallery .item img { min-width: 160px; }
 }
 
 @media (max-width: 991px) {
-  .pdp-hero-image { height: 55vh; }
+  .product-detail-page .hero .hero-image { height: 55vh; }
 }
 
 @media (max-width: 1200px) {
-  .pdp-hero-image { height: 65vh; }
+  .product-detail-page .hero .hero-image { height: 65vh; }
 }
 
 @media (min-width: 1201px) {
-  .pdp-container { padding: 3rem 5rem; }
+  .product-detail-page { padding: 3rem 5rem; }
 }

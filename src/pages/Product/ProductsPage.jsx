@@ -34,18 +34,21 @@ const ProductsPage = () => {
   ];
 
   return (
-    <div className="pp-products-page">
+    <div className="products-page">
       {products.map((product) => (
-        <section className="pp-product-section" key={product.id}>
-          <h2 className="pp-product-title">{product.title}</h2>
-          <div className="pp-product-image">
-            {/* Optional image */}
-          </div>
-          <Link to={`/product/${product.id}`} className="pp-product-link">
+        <section className="product-section" key={product.id}>
+          <h2 className="product-section__title">{product.title}</h2>
+          <div className="product-section__image"></div>
+          <Link
+            to={`/product/${product.id}`}
+            className="product-section__link"
+          >
             Link to the product site
           </Link>
-          <h3 className="pp-product-description-title">Product Description</h3>
-          <div className="pp-product-description">
+          <h3 className="product-section__description-title">
+            Product Description
+          </h3>
+          <div className="product-section__description">
             {product.description.map((text, i) => (
               <p key={i}>{text}</p>
             ))}

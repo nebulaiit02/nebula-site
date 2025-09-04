@@ -23,8 +23,8 @@ const Header = () => {
       {/* Navigation Links */}
       <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
         <div className="nav-menu">
-          <Link to="/" className="nav-link active" onClick={handleLinkClick}>Home</Link>
-          <Link to="/service-us" className="nav-link" onClick={handleLinkClick}>Services</Link>
+          <Link to="/" className="nav-link" onClick={handleLinkClick}>Home</Link>
+          <Link to="/service" className="nav-link" onClick={handleLinkClick}>Services</Link>
           <Link to="/product-page" className="nav-link" onClick={handleLinkClick}>Products</Link>
           <Link to="/about-us" className="nav-link" onClick={handleLinkClick}>About Us</Link>
           <Link to="/contact-us" className="nav-link" onClick={handleLinkClick}>Contact Us</Link> 

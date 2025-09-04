@@ -33,50 +33,50 @@ const ProductDetailPage = () => {
   if (!product) return <p>Loading...</p>;
 
   return (
-    <div className="pdp-container">
+    <div className="product-detail-page">
       {/* HERO SECTION */}
-      <section className="pdp-hero">
-        <div className="pdp-hero-img">
-          <img src={product.gallery[0]} alt={product.name} className="pdp-hero-image" />
+      <section className="hero">
+        <div className="hero-img">
+          <img src={product.gallery[0]} alt={product.name} className="hero-image" />
         </div>
-        <button className="pdp-btn-link">Live Link to Product Site</button>
+        <button className="btn-link">Live Link to Product Site</button>
       </section>
 
       {/* DESCRIPTION */}
-      <section className="pdp-description">
+      <section className="description">
         <h2>Product Description</h2>
         <p>{product.description}</p>
       </section>
 
       {/* FEATURES 1 */}
-      <section className="pdp-features">
-        <div className="pdp-text-block">
+      <section className="features">
+        <div className="text-block">
           <h3>Features 1 Section</h3>
           <p>{product.features1}</p>
         </div>
-        <div className="pdp-image-block">
+        <div className="image-block">
           <img src={product.gallery[1]} alt="Feature 1" />
         </div>
       </section>
 
       {/* FEATURES 2 */}
-      <section className="pdp-features pdp-features-reverse">
-        <div className="pdp-text-block">
+      <section className="features reverse">
+        <div className="text-block">
           <h3>Features 2 Section</h3>
           <p>{product.features2}</p>
         </div>
-        <div className="pdp-image-block">
+        <div className="image-block">
           <img src={product.gallery[2]} alt="Feature 2" />
         </div>
       </section>
 
       {/* GALLERY */}
-      <section className="pdp-gallery">
-        <h2 className="pdp-gallery-title">Product Gallery</h2>
-        <div className="pdp-gallery-grid">
+      <section className="gallery">
+        <h2 className="title">Product Gallery</h2>
+        <div className="grid">
           {product.gallery.map((img, i) => (
-            <div key={i} className="pdp-gallery-item">
-              <div className="pdp-gallery-img">
+            <div key={i} className="item">
+              <div className="img">
                 <img src={img} alt={`gallery-${i}`} />
               </div>
               <p>Description of img</p>
@@ -86,19 +86,19 @@ const ProductDetailPage = () => {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="pdp-testimonials">
-        <h2 className="pdp-testimonials-title">Testimonials</h2>
-        <div className="pdp-testimonials-grid">
+      <section className="testimonials">
+        <h2 className="title">Testimonials</h2>
+        <div className="grid">
           {product.testimonials.map((t, i) => (
-            <div key={`testimonial-${i}`} className="pdp-testimonial-wrapper">
-              <div className="pdp-testimonial-card">
+            <div key={`testimonial-${i}`} className="wrapper">
+              <div className="card">
                 <img
                   src={typeof t === "object" && t.image ? t.image : "/placeholder.png"}
                   alt={`Testimonial ${i}`}
-                  className="pdp-testimonial-img"
+                  className="img"
                 />
               </div>
-              <p className="pdp-testimonial-caption">
+              <p className="caption">
                 {typeof t === "object" && t.text ? t.text : t}
               </p>
             </div>

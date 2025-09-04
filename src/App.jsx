@@ -17,10 +17,10 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/product-page" element={<ProductsPage />} />
-        <Route path="/Contact-page" element={<ContactPage />} />
+        <Route path="/contact-us" element={<ContactPage />} />
         <Route path="/product/:id" element={<ProductDetailsPage />} />
-        <Route path="/service-area" element={<ServicePage />} />
-        <Route path="/AboutUs-page" element={<AboutPage />} />
+        <Route path="/service" element={<ServicePage />} />
+        <Route path="/About-us" element={<AboutPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

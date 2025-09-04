@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
-import ProductsPage from "./pages/Product/ProductPage";
+import ProductPage from "./pages/Product/ProductPage";
 import ContactPage from "./pages/Contact/ContactPage";
 import ProductDetailsPage from "./pages/Product/Details/ProductDetailPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -16,7 +16,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/product-page" element={<ProductsPage />} />
+        <Route path="/product-page" element={<ProductPage />} />
         <Route path="/contact-us" element={<ContactPage />} />
         <Route path="/product/:id" element={<ProductDetailsPage />} />
         <Route path="/service" element={<ServicePage />} />

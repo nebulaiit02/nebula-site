@@ -3,11 +3,11 @@ import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import ProductsPage from "./pages/Product/ProductsPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ServicePage from "./pages/Service/ServicePage";
 import HomePage from "./pages/Home/HomePage";
-import AboutPage from "./Pages/AboutUs/About";
-import ContactPage from './pages/Contact/ContactPage'
+import ContactPage from './pages/Contact/ContactPage';
 import ProductDetailPage from "./pages/Product/Details/ProductDetailPage";
+import ServicePage from "./pages/Service/ServicePage";
+import AboutPage from "./pages/AboutUs/AboutPage";
 import "./App.css";
 
 function App() {

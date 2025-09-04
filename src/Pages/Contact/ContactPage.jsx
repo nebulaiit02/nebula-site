@@ -1,7 +1,7 @@
 import React from "react";
 import "./ContactPage.css";
 
-function Contact() {
+function ContactPage() {
   return (
     <div className="contact-page"> {/* full-screen background */}
       <div className="contact-card"> {/* centered card visible in middle only */}
@@ -50,4 +50,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default ContactPage;

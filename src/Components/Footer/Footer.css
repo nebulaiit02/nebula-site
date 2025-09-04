@@ -1,12 +1,11 @@
 .footer {
   width: 100%;
   padding: 2% 5%;
-  background: #1e0f2c; /* dark purple */
+  background: #1e0f2c; 
   color: #fff;
   font-family: "Poppins", Arial, sans-serif;
 }
 
-/* Newsletter section */
 .newsletter {
   display: flex;
   justify-content: space-between;
@@ -23,6 +22,7 @@
 .newsletter-form {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .newsletter-form input {
@@ -32,6 +32,7 @@
   outline: none;
   background: #2a1b38;
   color: #fff;
+  min-width: 200px;
 }
 
 .newsletter-form button {
@@ -53,12 +54,13 @@ hr {
   margin: 20px 0;
 }
 
-/* Footer main section */
 .footer-main {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .footer-logo {
@@ -91,13 +93,12 @@ hr {
   margin: 0;
 }
 
-/* Social icons */
 .footer-social {
   display: flex;
   justify-content: center;
-
   gap: 20px;
   font-size: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .footer-social svg {
@@ -107,4 +108,72 @@ hr {
 
 .footer-social svg:hover {
   color: #ff00cc;
+}
+
+
+@media (max-width: 480px) {
+  .newsletter {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .newsletter-form {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+  }
+
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links,
+  .footer-info {
+    align-items: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .newsletter {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .newsletter-form {
+    justify-content: center;
+  }
+
+  .footer-main {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .footer-links,
+  .footer-info {
+    align-items: center;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .newsletter {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }

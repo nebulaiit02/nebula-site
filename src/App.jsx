@@ -2,12 +2,12 @@ import React from "react";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import ProductsPage from "./pages/Product/ProductsPage";
-import ProductDetailPage from './pages/Product/Details/ProductDetailPage';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ServicePage from "./pages/Service/ServicePage";
 import HomePage from "./pages/Home/HomePage";
 import AboutPage from "./Pages/AboutUs/About";
 import ContactPage from './pages/Contact/ContactPage'
+import ProductDetailPage from "./pages/Product/Details/ProductDetailPage";
 import "./App.css";
 
 function App() {

@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
-import ProductDetailPage from "./pages/Product/Details/ProductDetailPage";
 import ProductsPage from "./pages/Product/ProductsPage";
+import ProductDetailPage from './pages/Product/Details/ProductDetailPage'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ServicePage from "./pages/Service/ServicePage";
 import HomePage from "./pages/Home/HomePage";

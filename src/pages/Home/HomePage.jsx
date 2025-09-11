@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import TeamMember from "../../Components/TeamMember/TeamMember";
 
 function HomePage() {
   return (
@@ -67,20 +68,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="team">
-        <h2>Our Creative Minds</h2>
-        <p>
-          Creative minds behind professional websites that boost your brand.
-        </p>
-        <div className="team-members">
-          <div className="member">Person 1</div>
-          <div className="member">Person 2</div>
-          <div className="member">Person 3</div>
-          <div className="member">Person 4</div>
-          <div className="member">Person 5</div>
-          <div className="member">Person 6</div>
-        </div>
-      </section>
+      <TeamMember/>
 
     </div>
   );

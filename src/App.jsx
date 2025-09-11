@@ -9,6 +9,7 @@ import ProductDetailPage from "./pages/Product/Details/ProductDetailPage";
 import ServicePage from "./pages/Service/ServicePage";
 import AboutPage from "./pages/AboutUs/AboutPage";
 import "./App.css";
+import HeroSection from "./Components/HeroSection/HeroSection";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Route path="/product/:id" element={<ProductDetailPage />} />
         <Route path="/service" element={<ServicePage />} />
         <Route path="/about-us" element={<AboutPage />} />
+        <Route path="/hero-section" element={<HeroSection />} />
+
       </Routes>
       <Footer />
     </BrowserRouter>

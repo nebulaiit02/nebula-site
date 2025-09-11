@@ -188,50 +188,85 @@
 }
 
 /* Our Clients Section */
-.our-clients {
-  padding: 100px 2rem 120px;
+.clients-section {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  padding: 3rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.clients-content {
+  max-width: 700px;
   text-align: center;
-  max-width: 1280px;
-  margin: 0 auto;
 }
 
-.our-clients h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 60px;
+.clients-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
   color: var(--color-text-primary);
 }
 
-.clients-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.client-card {
-  background-color: var(--color-bg-card);
-  color: var(--color-text-primary);
-  padding: 40px 25px;
-  border-radius: 8px;
-  text-align: left;
-  min-height: 160px;
-  border: 1px solid var(--color-border);
-  box-shadow: 0 4px 6px var(--shadow-dark);
-  transition: box-shadow 0.3s ease;
-}
-
-.client-card:hover {
-  box-shadow: 0 6px 10px var(--shadow-dark);
-}
-
-.client-card p {
-  font-size: 0.875rem;
-  line-height: 1.6;
-  margin-bottom: 10px;
+.clients-text {
+  font-size: 1rem;
   color: var(--color-text-secondary);
-  word-break: break-word;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
 }
 
+.clients-quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--color-primary);
+  margin: 1.2rem 0;
+}
+
+.clients-highlight {
+  font-size: 1rem;
+  color: var(--color-text-primary);
+  margin: 1.5rem 0;
+  font-weight: 500;
+}
+
+.clients-cta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 40px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background: var(--color-gradient);
+  color: #fff;
+  box-shadow: 0 4px 10px var(--shadow-dark);
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px var(--shadow-dark);
+}
+
+.secondary-btn {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  background: transparent;
+}
+
+.secondary-btn:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
 /* Responsive Design */
 @media (max-width: 1024px) {
   .about-header {

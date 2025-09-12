@@ -1,3 +1,4 @@
+
 .creative-minds {
   padding: 100px 2rem;
   text-align: center;
@@ -30,11 +31,11 @@
   margin: 0 auto;
 }
 
-.creative-minds .team-grid  .team-member {
+.creative-minds .team-grid .team-member {
   text-align: center;
 }
 
-.creative-minds .team-grid  .team-member .member-avatar {
+.creative-minds .team-grid .team-member .member-avatar {
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -43,14 +44,92 @@
   box-shadow: 0 4px 6px var(--shadow-dark);
 }
 
-.creative-minds .team-grid  .team-member h4 {
+.creative-minds .team-grid .team-member h4 {
   font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: var(--color-text-primary);
 }
 
-.creative-minds .team-grid  .team-member p {
+.creative-minds .team-grid .team-member p {
   font-size: 0.875rem;
   color: var(--color-text-secondary);
+}
+
+
+
+/* Tablet (≤ 992px) */
+@media (max-width: 992px) {
+  .creative-minds {
+    padding: 80px 2rem;
+  }
+
+  .creative-minds h2 {
+    font-size: 1.75rem;
+  }
+
+  .creative-minds .section-description {
+    font-size: 0.95rem;
+    margin-bottom: 50px;
+  }
+
+  .creative-minds .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px;
+  }
+}
+
+/* Mobile Landscape (≤ 768px) */
+@media (max-width: 768px) {
+  .creative-minds {
+    padding: 60px 1.5rem;
+  }
+
+  .creative-minds h2 {
+    font-size: 1.5rem;
+  }
+
+  .creative-minds .section-description {
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
+
+  .creative-minds .team-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .creative-minds .team-grid .team-member .member-avatar {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Mobile Portrait (≤ 480px) */
+@media (max-width: 480px) {
+  .creative-minds {
+    padding: 50px 1.25rem;
+  }
+
+  .creative-minds h2 {
+    font-size: 1.35rem;
+  }
+
+  .creative-minds .section-description {
+    font-size: 0.85rem;
+    margin-bottom: 30px;
+  }
+
+  .creative-minds .team-grid .team-member .member-avatar {
+    width: 90px;
+    height: 90px;
+  }
+
+  .creative-minds .team-grid .team-member h4 {
+    font-size: 1rem;
+  }
+
+  .creative-minds .team-grid .team-member p {
+    font-size: 0.8rem;
+  }
 }

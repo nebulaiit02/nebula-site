@@ -1,21 +1,13 @@
-/* AboutPage.css (updated to use App.css :root variables) */
-
-/* * {
-  margin: auto;
-  padding: 0;
-  box-sizing: border-box;
-} */
 
 .about-page {
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
   font-family: "Inter", sans-serif;
-  /* min-height: 100vh; */
   width: 100%;
 }
 
-/* Header Section */
-.about-header {
+
+.about-page .about-header {
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -27,12 +19,11 @@
   gap: 100px;
 }
 
-.header-content {
+.about-page .about-header .header-content {
   flex: 1.2;
-
 }
 
-.main-title {
+.about-page .about-header .header-content .main-title {
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.2;
@@ -41,7 +32,7 @@
   color: var(--color-text-primary);
 }
 
-.sub-title {
+.about-page .about-header .header-content .sub-title {
   font-size: 1.25rem;
   font-weight: normal;
   color: var(--color-text-secondary);
@@ -49,12 +40,12 @@
   word-break: break-word;
 }
 
-.about-section {
-  flex: 1;
 
+.about-page .about-section {
+  flex: 1;
 }
 
-.about-section h3 {
+.about-page .about-section h3 {
   font-size: 1.75rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -62,11 +53,11 @@
   color: var(--color-text-primary);
 }
 
-.about-text {
+.about-page .about-section .about-text {
   margin-top: 2rem;
 }
 
-.about-text p {
+.about-page .about-section .about-text p {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--color-text-secondary);
@@ -74,25 +65,22 @@
   word-break: break-word;
 }
 
-/* Our Creative Minds Section */
 
-
-/* Project Timeline Section */
-.project-timeline {
+.about-page .project-timeline {
   padding: 100px 2rem;
   text-align: center;
   max-width: 1280px;
   margin: 0 auto;
 }
 
-.project-timeline h2 {
+.about-page .project-timeline h2 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 70px;
   color: var(--color-text-primary);
 }
 
-.timeline-container {
+.about-page .project-timeline .timeline-container {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -101,7 +89,7 @@
   margin: 0 auto;
 }
 
-.timeline-line {
+.about-page .project-timeline .timeline-container .timeline-line {
   position: absolute;
   margin-top: -17px;
   top: 50%;
@@ -113,14 +101,14 @@
   z-index: 1;
 }
 
-.timeline-item {
+.about-page .project-timeline .timeline-container .timeline-item {
   position: relative;
   z-index: 2;
   text-align: center;
   flex: 1;
 }
 
-.timeline-dot {
+.about-page .project-timeline .timeline-container .timeline-item .timeline-dot {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -129,26 +117,26 @@
   border: 4px solid var(--color-bg-primary);
 }
 
-.timeline-content h4 {
+.about-page .project-timeline .timeline-container .timeline-item .timeline-content h4 {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
   color: var(--color-text-primary);
 }
 
-.timeline-content p {
+.about-page .project-timeline .timeline-container .timeline-item .timeline-content p {
   font-size: 0.875rem;
   color: var(--color-text-secondary);
 }
 
-/* Awards Section */
-.awards {
+
+.about-page .awards {
   padding: 100px 2rem;
   max-width: 1280px;
   margin: 0 auto;
 }
 
-.awards h2 {
+.about-page .awards h2 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 50px;
@@ -156,7 +144,7 @@
   color: var(--color-text-primary);
 }
 
-.awards-list {
+.about-page .awards .awards-list {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -164,13 +152,13 @@
   margin: 0 auto;
 }
 
-.award-item {
+.about-page .awards .awards-list .award-item {
   display: flex;
   align-items: flex-start;
   gap: 20px;
 }
 
-.award-icon {
+.about-page .awards .awards-list .award-item .award-icon {
   width: 50px;
   height: 50px;
   background-color: var(--color-bg-card);
@@ -179,7 +167,7 @@
   box-shadow: 0 2px 4px var(--shadow-dark);
 }
 
-.award-item p {
+.about-page .awards .awards-list .award-item p {
   font-size: 0.875rem;
   line-height: 1.5;
   color: var(--color-text-secondary);
@@ -187,8 +175,8 @@
   word-break: break-word;
 }
 
-/* Our Clients Section */
-.clients-section {
+
+.about-page .clients-section {
   background: var(--color-bg-primary);
   color: var(--color-text-primary);
   padding: 3rem 1.5rem;
@@ -196,40 +184,40 @@
   justify-content: center;
 }
 
-.clients-content {
+.about-page .clients-section .clients-content {
   max-width: 700px;
   text-align: center;
 }
 
-.clients-title {
+.about-page .clients-section .clients-content .clients-title {
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 1.2rem;
   color: var(--color-text-primary);
 }
 
-.clients-text {
+.about-page .clients-section .clients-content .clients-text {
   font-size: 1rem;
   color: var(--color-text-secondary);
   margin-bottom: 1.2rem;
   line-height: 1.6;
 }
 
-.clients-quote {
+.about-page .clients-section .clients-content .clients-quote {
   font-size: 1.1rem;
   font-style: italic;
   color: var(--color-primary);
   margin: 1.2rem 0;
 }
 
-.clients-highlight {
+.about-page .clients-section .clients-content .clients-highlight {
   font-size: 1rem;
   color: var(--color-text-primary);
   margin: 1.5rem 0;
   font-weight: 500;
 }
 
-.clients-cta {
+.about-page .clients-section .clients-content .clients-cta {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -237,7 +225,7 @@
   flex-wrap: wrap;
 }
 
-.cta-btn {
+.about-page .clients-section .clients-content .clients-cta .cta-btn {
   text-decoration: none;
   padding: 0.7rem 1.2rem;
   border-radius: 40px;
@@ -246,132 +234,155 @@
   transition: all 0.3s ease;
 }
 
-.primary-btn {
+.about-page .clients-section .clients-content .clients-cta .primary-btn {
   background: var(--color-gradient);
   color: #fff;
   box-shadow: 0 4px 10px var(--shadow-dark);
 }
 
-.primary-btn:hover {
+.about-page .clients-section .clients-content .clients-cta .primary-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 14px var(--shadow-dark);
 }
 
-.secondary-btn {
+.about-page .clients-section .clients-content .clients-cta .secondary-btn {
   border: 2px solid var(--color-primary);
   color: var(--color-primary);
   background: transparent;
 }
 
-.secondary-btn:hover {
+.about-page .clients-section .clients-content .clients-cta .secondary-btn:hover {
   background: var(--color-primary);
   color: #fff;
 }
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .about-header {
-    padding: 60px 40px;
-    gap: 60px;
+
+@media (max-width: 1200px) {
+  .about-page .about-header {
+    padding: 4rem 3rem;
+    gap: 4rem;
   }
 
-  .main-title {
-    font-size: 2rem;
+  .about-page .about-header .header-content .main-title {
+    font-size: clamp(2rem, 4vw, 2.5rem); /* fluid scaling */
   }
 
-  .creative-minds,
-  .project-timeline,
-  .awards,
-  .our-clients {
-    padding: 80px 40px;
+  .about-page .project-timeline,
+  .about-page .awards,
+  .about-page .clients-section {
+    padding: 5rem 3rem;
   }
 }
 
-@media (max-width: 768px) {
-  .about-header {
+/* Medium Screens (Tablets > 992px) */
+@media (max-width: 992px) {
+  .about-page .about-header {
     flex-direction: column;
-    padding: 50px 2rem;
-    gap: 40px;
+    padding: 3.5rem 2.5rem;
+    gap: 3rem;
   }
 
-  .main-title {
-    font-size: 1.75rem;
+  .about-page .about-header .header-content .main-title {
+    font-size: clamp(1.75rem, 3.5vw, 2.25rem);
   }
 
-  .sub-title {
+  .about-page .about-header .header-content .sub-title {
     font-size: 1.125rem;
   }
 
-  .about-section h3 {
+  .about-page .about-section h3 {
     font-size: 1.5rem;
   }
 
-  .team-grid,
-  .clients-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-
-  .timeline-container {
+  .about-page .project-timeline .timeline-container {
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
   }
 
-  .timeline-line {
+  .about-page .project-timeline .timeline-container .timeline-line {
     display: none;
   }
 
-  .creative-minds,
-  .project-timeline,
-  .awards,
-  .our-clients {
-    padding: 60px 25px;
+  .about-page .project-timeline,
+  .about-page .awards,
+  .about-page .clients-section {
+    padding: 4rem 2rem;
   }
 }
 
+/* Small Screens (Mobile Landscape > 768px) */
+@media (max-width: 768px) {
+  .about-page .about-header {
+    padding: 3rem 1.75rem;
+    gap: 2rem;
+  }
+
+  .about-page .about-header .header-content .main-title {
+    font-size: clamp(1.5rem, 4vw, 1.875rem);
+  }
+
+  .about-page .clients-section .clients-content .clients-title {
+    font-size: 1.5rem;
+  }
+
+  .about-page .project-timeline,
+  .about-page .awards,
+  .about-page .clients-section {
+    padding: 3.5rem 1.5rem;
+  }
+}
+
+/* Extra Small Screens (Mobile Portrait > 576px) */
+@media (max-width: 576px) {
+  .about-page .about-header {
+    padding: 2.5rem 1.25rem;
+    gap: 1.5rem;
+  }
+
+  .about-page .about-header .header-content .main-title {
+    font-size: 1.5rem;
+  }
+
+  .about-page .awards .awards-list {
+    gap: 1.25rem;
+  }
+
+  .about-page .awards .awards-list .award-item {
+    gap: 0.75rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-page .clients-section .clients-content {
+    padding: 0 0.5rem;
+  }
+
+  .about-page .clients-section .clients-content .clients-cta {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
 @media (max-width: 480px) {
-  .about-header {
+  .about-page .about-header {
     padding: 40px 1.25rem;
     gap: 1.5rem;
   }
 
-  .main-title {
+  .about-page .about-header .header-content .main-title {
     font-size: 1.5rem;
   }
 
-  .team-grid,
-  .clients-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .creative-minds,
-  .project-timeline,
-  .awards,
-  .our-clients {
+  .about-page .project-timeline,
+  .about-page .awards,
+  .about-page .clients-section {
     padding: 50px 1.25rem;
   }
 
-  .section-description {
-    margin-bottom: 50px;
-  }
-
-  .project-timeline h2,
-  .creative-minds h2,
-  .awards h2,
-  .our-clients h2 {
-    margin-bottom: 40px;
-  }
-
-  .awards-list {
+  .about-page .awards .awards-list {
     gap: 1.5rem;
   }
 
-  .award-item {
+  .about-page .awards .awards-list .award-item {
     gap: 1rem;
-  }
-
-  .client-card {
-    padding: 1.5rem 1.25rem;
-    min-height: 140px;
   }
 }

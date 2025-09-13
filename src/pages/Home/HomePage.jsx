@@ -1,12 +1,13 @@
 import React from "react";
 import "./Home.css";
 import TeamMember from "../../Components/TeamMember/TeamMember";
+import HeroSection from "../../Components/HeroSection/HeroSection";
 
 function HomePage() {
   return (
     <div className="home-wrapper">
      
-      <div className="hero">
+      {/* <div className="hero">
         <div className="hero-content">
           <h1>
             Amazing Websites,
@@ -40,7 +41,9 @@ function HomePage() {
             alt="CSS3"
           />
         </div>
-      </div>
+      </div> */}
+
+      <HeroSection/>
 
       <section className="pricing">
         <h2>Flexible Pricing For All Budgets</h2>

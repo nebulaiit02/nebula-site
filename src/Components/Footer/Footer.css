@@ -1,37 +1,46 @@
-.footer-container {
+.footer-wrapper {
+  background-color: #fff;
+  padding: 40px 20px;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.footer-wrapper .footer-container {
+  width: 80%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 80px;
-  background: #fff;
+  padding: 60px 0;
   font-family: Arial, sans-serif;
-  border-top: 1px solid #ddd;
 }
 
-.footer-left {
-  max-width: 50%;
+.footer-wrapper .footer-container .footer-left {
+  width: 68%;
+  text-align: left;
 }
 
-.footer-left h2 {
-  font-size: 1.8rem;
+.footer-wrapper .footer-container .footer-left h2 {
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 15px;
   color: #000;
+  text-transform: capitalize;
 }
 
-.subtitle {
+.footer-wrapper .footer-container .footer-left .subtitle {
   font-size: 1.2rem;
   margin-bottom: 15px;
   color: #333;
 }
 
-.description {
+.footer-wrapper .footer-container .footer-left .description {
   font-size: 1rem;
   margin-bottom: 25px;
   color: #555;
 }
 
-.cta-btn {
+.footer-wrapper .footer-container .footer-left .cta-btn {
   background: black;
   color: #e600ff;
   padding: 12px 25px;
@@ -42,91 +51,87 @@
   transition: 0.3s ease;
 }
 
-.cta-btn:hover {
+.footer-wrapper .footer-container .footer-left .cta-btn:hover {
   background: #333;
 }
 
-.footer-right .image-box {
-  width: 280px;
+.footer-wrapper .footer-container .footer-right {
+  width: 30%;
+}
+
+.footer-wrapper .footer-container .footer-right .image-box {
+  width: 100%;
   height: 220px;
   background: black;
   border-radius: 20px;
 }
 
-@media (max-width: 900px) {
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
-  }
-
-  .footer-left {
-    max-width: 100%;
-  }
-
-  .footer-right {
-    margin-top: 20px;
-  }
-}
-
-.footer-wrapper {
-  background-color: #fff;
-  padding: 40px 20px;
-  width: 100%;
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
-
-.footer {
+.footer-wrapper .footer-body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr auto;
   grid-template-rows: auto auto;
-  gap: 20px;
-  max-width: 1200px;
+  gap: 35px;
+  max-width: 80%;
   margin: 0 auto;
 }
 
-.footer-card {
+.footer-wrapper .footer-body .footer-card {
+  width: 450px;
   background: rgb(14, 14, 14);
-  border-radius: 16px;
+  border-radius: 25px;
   padding: 20px;
   text-align: left;
   color: white;
 }
 
-.left-card h2 {
-  font-size: 2rem;
+.footer-wrapper .footer-body .left-card h2 {
+  width: 50px;
+  font-size: 3.5rem;
   font-weight: 700;
-  line-height: 1.2;
-  margin: 0 0 15px 0;
+  margin-bottom: 30px;
+  text-transform: capitalize;
 }
 
-.left-card .brand {
+.footer-wrapper .footer-body .left-card .brand {
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
 }
 
-.left-card .copyright {
-  font-size: 0.85rem;
+.footer-wrapper .footer-body .left-card .copyright {
+  font-size: 1rem;
   color: #ede9e9;
 }
 
-.support-card h3 {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
+.footer-wrapper .footer-body .center-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-wrapper .footer-body .center-card .support-card {
+  width: 450px;
+  height: 200px;
 }
 
-.support-card p {
+.footer-wrapper .footer-body .center-card .support-card h3 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.footer-wrapper .footer-body .center-card .support-card p {
   font-size: 0.95rem;
   line-height: 1.5;
+  margin-bottom: 25px;
 }
 
-.support-card a {
+.footer-wrapper .footer-body .center-card .support-card a {
   color: #eaecee;
   text-decoration: underline;
 }
 
-.terms-card {
+.footer-wrapper .footer-body .center-card .terms-card {
+  width: 450px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,89 +139,177 @@
   font-size: 0.95rem;
 }
 
-.terms-card a {
-  color: #555;
+.footer-wrapper .footer-body .center-card .terms-card a {
+  color: #ffffff;
   text-decoration: underline;
 }
 
-.social-card {
+.footer-wrapper .footer-body .social-card {
+  width: 200px;
   text-align: center;
   color: white;
 }
 
-.social-card h3 {
+.footer-wrapper .footer-body .social-card h3 {
   margin-bottom: 20px;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
-.social-icons {
+.footer-wrapper .footer-body .social-icons {
+  height: 200px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 15px;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
-.social-icons a {
+.footer-wrapper .footer-body .social-icons a {
   color: white;
-  transition: color 0.2s ease;
+  transition: all 0.3s ease-in-out;
 }
 
-.social-icons a:hover {
-  color: #cccccc;
+.footer-wrapper .footer-body .social-icons a:hover {
+  transform: translateY(-10px);
 }
 
-.nebula {
-  margin-top: 40px;
-  font-size: clamp(1.8rem, 8vw, 5rem);
+.footer-wrapper .nebula {
+  font-size: 9rem;
   font-weight: 800;
-  letter-spacing: clamp(2px, 2vw, 20px);
+  letter-spacing: 65px;
   color: #0e0e0e;
   word-wrap: break-word;
   text-align: center;
 }
 
-@media (max-width: 900px) {
-  .footer {
-    grid-template-columns: 1fr;
+/* ================== Responsive ================== */
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .footer-wrapper .footer-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 0;
     text-align: center;
   }
 
-  .terms-card {
-    flex-direction: column;
-    gap: 10px;
+  .footer-wrapper .footer-container .footer-left,
+  .footer-wrapper .footer-container .footer-right {
+    width: 100%;
   }
 
-  .social-icons {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 600px) {
-  .footer-container {
-    padding: 30px 15px;
+  .footer-wrapper .footer-container .footer-left h2 {
+    font-size: 1.8rem;
   }
 
-  .footer-left h2 {
+  .footer-wrapper .footer-container .footer-left .subtitle {
+    font-size: 1rem;
+  }
+  .footer-wrapper .footer-container .footer-left .cta-btn{
+
+    margin-bottom: 10px;
+  }
+
+  .footer-wrapper .footer-body {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    gap: 20px;
+  }
+
+  .footer-wrapper .footer-body .footer-card,
+  .footer-wrapper .footer-body .center-card .support-card,
+  .footer-wrapper .footer-body .center-card .terms-card {
+    width: 100%;
+  }
+  .footer-wrapper .footer-body .social-card h3 {
+    margin-bottom: 10px;
     font-size: 1.5rem;
   }
 
-  .subtitle {
-    font-size: 1rem;
+  .footer-wrapper .footer-body .social-icons {
+    height: 50px;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: center;
+  font-size: 2rem;
+
   }
 
-  .description {
-    font-size: 0.9rem;
+  .footer-wrapper .nebula {
+    font-size: 3rem;
+    letter-spacing: 20px;
+    margin: 30px 0;
+  }
+}
+
+/* Large Mobile / Small Tablet (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .footer-wrapper .footer-container {
+    flex-direction: column;
+    width: 90%;
+    padding: 40px 0;
+    text-align: center;
   }
 
-  .cta-btn {
-    padding: 10px 20px;
-    font-size: 0.9rem;
+  .footer-wrapper .footer-container .footer-left,
+  .footer-wrapper .footer-container .footer-right {
+    width: 100%;
   }
 
-  .footer-right .image-box {
-    width: 220px;
-    height: 160px;
+  .footer-wrapper .footer-container .footer-left h2 {
+    font-size: 2rem;
+  }
+
+  .footer-wrapper .footer-body {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+    gap: 25px;
+  }
+
+  .footer-wrapper .footer-body .footer-card,
+  .footer-wrapper .footer-body .center-card .support-card,
+  .footer-wrapper .footer-body .center-card .terms-card {
+    width: 100%;
+  }
+
+  .footer-wrapper .nebula {
+    font-size: 5rem;
+    letter-spacing: 30px;
+  }
+}
+
+/* Tablets (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-wrapper .footer-container {
+    flex-direction: row;
+    width: 90%;
+    padding: 50px 0;
+  }
+
+  .footer-wrapper .footer-container .footer-left {
+    width: 60%;
+  }
+
+  .footer-wrapper .footer-container .footer-right {
+    width: 35%;
+  }
+
+  .footer-wrapper .footer-body {
+    grid-template-columns: 1fr 1fr;
+    max-width: 90%;
+    gap: 30px;
+  }
+
+  .footer-wrapper .footer-body .footer-card,
+  .footer-wrapper .footer-body .center-card .support-card,
+  .footer-wrapper .footer-body .center-card .terms-card {
+    width: 100%;
+  }
+
+  .footer-wrapper .nebula {
+    font-size: 6rem;
+    letter-spacing: 40px;
   }
 }

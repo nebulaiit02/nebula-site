@@ -8,8 +8,8 @@ import ContactPage from "./pages/Contact/ContactPage";
 import ProductDetailPage from "./pages/Product/Details/ProductDetailPage";
 import ServicePage from "./pages/Service/ServicePage";
 import AboutPage from "./pages/AboutUs/AboutPage";
-import "./App.css";
 import HeroSection from "./Components/HeroSection/HeroSection";
+import "./App.css";
 
 function App() {
   return (

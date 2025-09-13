@@ -11,7 +11,7 @@
   --color-gradient: linear-gradient(90deg, #B625FB, #FF00A5); /* Brand gradient */
 
   /* ===== Text Colors ===== */
-  --color-text-primary: #FFFFFF;   /* Main text color */
+  --color-text-primary: #FFFFFF   ;/* Main text color */
   --color-text-secondary: #CFCFCF; /* Secondary/subtle text color */
 
   /* ===== Button Colors ===== */
@@ -46,3 +46,4 @@ body {
   flex-direction: column;
   align-items: center;
 }
+

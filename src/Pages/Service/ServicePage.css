@@ -1,14 +1,28 @@
 
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; 
+  overflow-y: scroll;   
+  scrollbar-width: none; 
+}
+
+
+
 .service-page {
   width: 100%;
+  background-color: #0B0416;
+  color: #FFFFFF;
+  box-sizing: border-box;
 }
 
-/* Hero */
+
 .service-page .hero {
-  padding: 60px 80px;
+  padding: 60px 5%;
 }
 
-.hero h2 {
+.service-page .hero h2 {
   font-size: 28px;
   font-weight: bold;
   max-width: 800px;
@@ -16,96 +30,195 @@
   text-align: left;
 }
 
-/* Features Section */
-.features {
-  padding: 60px 80px;
+
+.service-page .features {
+  padding: 60px 5%;
 }
 
-.features h3 {
+.service-page .features h3 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-.features p {
+.service-page .features p {
   max-width: 500px;
   margin: 8px 0;
 }
 
-.features .image-box.large {
+.service-page .features .image-box.large {
   margin-top: 30px;
   width: 100%;
-  height: 250px;
+  height: 300px;
   background-color: white;
   border-radius: 10px;
 }
-
-/* Features List Section */
-.features-list {
-  padding: 60px 80px;
+.service-page .features-list {
+  padding: 60px 5%;
 }
 
-.features-list h3 {
+.service-page .features-list h3 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.list-content {
+.service-page .features-list .list-content {
   display: flex;
   gap: 40px;
   align-items: flex-start;
+  padding-top: 80px;
+  flex-wrap: nowrap; 
 }
 
-.list-content .text-left {
+.service-page .features-list .text-left {
   flex: 1;
+  min-width: 250px;
 }
 
-.list-content .text-left p {
+.service-page .features-list .text-left p {
   margin: 10px 0;
 }
 
-.list-content .image-box.medium {
+.service-page .features-list .image-box.medium {
   flex: 1;
+  min-width: 250px;
   height: 200px;
   background-color: white;
   border-radius: 10px;
 }
 
-/* Testimonials */
-.testimonials {
-    text-align: center;
-  padding: 60px 80px;
+.service-page .testimonials {
+  padding: 60px 5%;
+  text-align: center;
 }
 
-.testimonials h3 {
+.service-page .testimonials h3 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 30px;
-  text-align: left;
 }
 
-.testimonials .cards {
+.service-page .testimonials .cards {
   display: flex;
+  justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
+}
+
+.service-page .testimonials .card-item {
+  flex: 0 1 280px;  
+  max-width: 300px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center;  
+}
+
+.service-page .testimonials .card-item .card {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  border-radius: 10px;
   margin-bottom: 15px;
 }
 
-.testimonials .card {
-  flex: 1;
-  height: 150px;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
-}
-
-.testimonials .card-texts {
-  display: flex;
-  gap: 30px;
-}
-
-.testimonials .card-texts p {
-  flex: 1;
+.service-page .testimonials .card-item p {
   font-size: 14px;
   color: #ccc;
+  margin: 0;
+}
+
+
+@media (max-width: 480px) {
+  .service-page .hero {
+    padding: 30px 5%;
+  }
+  .service-page .hero h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .service-page .features,
+  .service-page .features-list,
+  .service-page .testimonials {
+    padding: 30px 5%;
+  }
+
+  .service-page .features-list .list-content {
+    flex-direction: column; 
+    gap: 20px;
+  }
+
+  .service-page .features-list .image-box.medium {
+    width: 100%; 
+    height: 300px; 
+  }
+
+  .service-page .testimonials .cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .service-page .hero {
+    padding: 40px 5%;
+  }
+  .service-page .hero h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .service-page .features,
+  .service-page .features-list,
+  .service-page .testimonials {
+    padding: 40px 5%;
+  }
+
+  .service-page .features-list .list-content {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .service-page .features-list .image-box.medium {
+    width: 100%;
+    height: 200px;
+  }
+
+  .service-page .testimonials .cards {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+/* Tablets (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .service-page .hero {
+    padding: 50px 5%;
+  }
+  .service-page .hero h2 {
+    font-size: 24px;
+  }
+
+  .service-page .features,
+  .service-page .features-list,
+  .service-page .testimonials {
+    padding: 50px 5%;
+  }
+
+  .service-page .features-list .list-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .service-page .features-list .image-box.medium {
+    width: 100%;
+    height: 220px;
+  }
+
+  .service-page .testimonials .card-item {
+    flex: 1 1 calc(50% - 15px);
+    max-width: 50%;
+  }
 }

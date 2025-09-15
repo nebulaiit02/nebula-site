@@ -7,41 +7,7 @@ function HomePage() {
   return (
     <div className="home-wrapper">
      
-      {/* <div className="hero">
-        <div className="hero-content">
-          <h1>
-            Amazing Websites,
-            <br />
-            Hassle Free
-          </h1>
-          <p>Custom Websites To Grow Your Business</p>
-          <button className="btn-primary">Get Started</button>
-        </div>
-        <div className="tech-icons">
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-            alt="JavaScript"
-          />
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
-            alt="React"
-          />
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
-            alt="HTML5"
-          />
 
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
-            alt="JAVA"
-          />
-
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
-            alt="CSS3"
-          />
-        </div>
-      </div> */}
 
       <HeroSection/>
 

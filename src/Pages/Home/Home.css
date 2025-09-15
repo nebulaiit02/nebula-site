@@ -4,36 +4,13 @@
   color: whitesmoke;
 }
 
-.hero {
-  background: linear-gradient(180deg, #BD01BB 0%, #FB00FF 35%, #570056 100%);
-  width: 100%;
-  padding: 5%;
-  min-height: 58vh;               
-  display: grid;
-  text-align: center;
-}
-
-.hero h1 { font-size: clamp(5rem, 5.6vw, 6rem); font-weight: 700; }
-.hero p  { margin: 15px 0; font-size: 4.1rem; }
-
-.btn-primary {
-  background: #fff; color: #491f7e;
-  padding: 24px 48px; border: none; border-radius: 25px;
-  cursor: pointer; font-weight: 600; margin-top: 14px;
-}
-
-.tech-icons {
-  margin-top: 28px; display: flex; justify-content: center; gap: 20px;
-}
-.tech-icons img { width: 95px; height: 80px; }
-
-
-
 .pricing,
-.testimonial,
-.team{ width: var(--container); margin-inline: auto; }
+.testimonial{
+   width: var(--container); 
+   margin-inline: auto; 
+}
 
-/* Pricing */
+
 .pricing { padding: 64px 0; text-align: center; }
 .pricing h2 { font-size: clamp(2.6rem, 3.4vw, 3rem); margin-bottom: 28px; }
 

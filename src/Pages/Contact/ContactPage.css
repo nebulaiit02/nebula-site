@@ -8,11 +8,13 @@
   justify-content: center;
   font-family: Arial, sans-serif;
   color: white;
+  
 }
 
 /* Centered card visible only in the middle */
 .contact-page .contact-card {
-  width: 80%;           
+  width: 80%; 
+  margin-top: 5%;          
   padding: 28px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.6);
 }
@@ -29,8 +31,8 @@
 .contact-page .contact-card  .contact-grid {
  display: flex;
  justify-content: space-between;
- align-items: center;
- margin-top: 25px;
+ align-items: start;
+ margin-top: 6%;
 
 }
 
@@ -97,11 +99,25 @@
   width: 48%;
 }
 
+.contact-page .contact-card  .contact-grid .contact-info .contact-info-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-page .contact-card  .contact-grid .contact-info .info-container{
+  width: 40%;
+  text-align: center;
+}
+
 .contact-page .contact-card  .contact-grid .contact-info .info-container h3{
-  margin: 0;
+  margin-bottom: 15px ;
+  font-size: 1.5rem;
 }
 .contact-page .contact-card  .contact-grid .contact-info .info-container p{
-  margin: 0;
+  margin-bottom: 15px ;
 }
 
 .css-1umw9bq-MuiSvgIcon-root{

@@ -88,6 +88,7 @@
   width: 50px;
   font-size: 3.5rem;
   font-weight: 700;
+  margin-top: 0;
   margin-bottom: 30px;
   text-transform: capitalize;
 }
@@ -114,6 +115,7 @@
 }
 
 .footer-wrapper .footer-body .center-card .support-card h3 {
+  margin-top: 0;
   margin-bottom: 15px;
   font-size: 2rem;
 }
@@ -151,6 +153,7 @@
 }
 
 .footer-wrapper .footer-body .social-card h3 {
+  margin-top: 0;
   margin-bottom: 20px;
   font-size: 2rem;
 }

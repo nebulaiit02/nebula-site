@@ -1,0 +1,19 @@
+.dot-pattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* push behind everything */
+  background-size: 20px 20px;
+}
+
+.dot-pattern.dark {
+  background-color: #000;
+  background-image: radial-gradient(white 1px, transparent 1px);
+}
+
+.dot-pattern.light {
+  background-color: #fff;
+  background-image: radial-gradient(black 1px, transparent 1px);
+}

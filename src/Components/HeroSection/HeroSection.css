@@ -9,12 +9,13 @@
 }
 
 .hero-wrapper .hero-section {
-  width: 1300px;
+  width: 100%; /* flexible instead of fixed */
+  max-width: 1300px;
   height: 500px;
   background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.292) 0%,
-    rgba(255, 255, 255, 0.443) 100%
+    to top,
+    rgba(255, 255, 255, 0.312) 0%,
+    rgba(255, 255, 255, 0.233) 100%
   );
   clip-path: path(
     "M40 0  H1000  V0  a80 80 0 0 0 155 0  V0  H1260  a40 40 0 0 1 40 40 V130 a40 40 0 0 1 -40 40 H1120 a40 40 0 0 0 -40 40 V460 a40 40 0 0 1 -40 40 H40 a40 40 0 0 1 -40 -40  V40  a40 40 0 0 1 40 -40 Z"

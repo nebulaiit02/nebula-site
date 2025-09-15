@@ -29,30 +29,57 @@
 }
 
 .footer-wrapper .footer-container .footer-left .subtitle {
-  font-size: 1.2rem;
+  width: 71%;
+  font-size: 1.3rem;
   margin-bottom: 15px;
   color: #333;
+  line-height: 1.6;
 }
 
 .footer-wrapper .footer-container .footer-left .description {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 25px;
   color: #555;
 }
 
-.footer-wrapper .footer-container .footer-left .cta-btn {
-  background: black;
-  color: #e600ff;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 25px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s ease;
+.footer-wrapper .footer-container .footer-left .clients-cta {
+
+  margin-top: 1.5rem;
 }
 
 .footer-wrapper .footer-container .footer-left .cta-btn:hover {
   background: #333;
+}
+
+.clients-cta .cta-btn {
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 40px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.clients-cta .primary-btn {
+  background: var(--color-gradient);
+  color: #fff;
+  box-shadow: 0 4px 10px var(--shadow-dark);
+}
+
+.clients-cta .primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px var(--shadow-dark);
+}
+
+.clients-cta .secondary-btn {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  background: transparent;
+}
+
+.clients-cta .secondary-btn:hover {
+  background: var(--color-primary);
+  color: #fff;
 }
 
 .footer-wrapper .footer-container .footer-right {

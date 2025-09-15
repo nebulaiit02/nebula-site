@@ -217,7 +217,7 @@
   font-weight: 500;
 }
 
-.about-page .clients-section .clients-content .clients-cta {
+/* .about-page .clients-section .clients-content .clients-cta {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -232,9 +232,9 @@
   font-size: 0.95rem;
   font-weight: 600;
   transition: all 0.3s ease;
-}
+} */
 
-.about-page .clients-section .clients-content .clients-cta .primary-btn {
+/* .about-page .clients-section .clients-content .clients-cta .primary-btn {
   background: var(--color-gradient);
   color: #fff;
   box-shadow: 0 4px 10px var(--shadow-dark);
@@ -254,7 +254,7 @@
 .about-page .clients-section .clients-content .clients-cta .secondary-btn:hover {
   background: var(--color-primary);
   color: #fff;
-}
+} */
 
 @media (max-width: 1200px) {
   .about-page .about-header {

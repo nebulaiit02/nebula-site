@@ -38,35 +38,6 @@ const AboutPage = () => {
       </section>
 
 
-      <section className="clients-section">
-      <div className="clients-content">
-        <h2 className="clients-title">Our Clients</h2>
-
-        <p className="clients-text">
-          We’re just starting our journey and don’t have clients to showcase yet —
-          but our vision is clear and we’re ready to take on exciting projects.
-        </p>
-
-        <blockquote className="clients-quote">
-          “To empower startups, small businesses, and learners through technology.”
-        </blockquote>
-
-        <p className="clients-highlight">
-          ✨ We’d love to make <strong>you our very first client</strong>.  
-          Let’s turn your idea into reality!
-        </p>
-
-        <div className="clients-cta">
-          <a href="#contact" className="cta-btn primary-btn">
-            🚀 Start Your Project
-          </a>
-          <a href="#contact" className="cta-btn secondary-btn">
-            ⭐ Be Our First Client
-          </a>
-        </div>
-      </div>
-    
-      </section>
     </div>
   );
 };

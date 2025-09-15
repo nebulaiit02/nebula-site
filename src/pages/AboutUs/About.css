@@ -175,87 +175,6 @@
   word-break: break-word;
 }
 
-
-.about-page .clients-section {
-  background: var(--color-bg-primary);
-  color: var(--color-text-primary);
-  padding: 3rem 1.5rem;
-  display: flex;
-  justify-content: center;
-}
-
-.about-page .clients-section .clients-content {
-  max-width: 700px;
-  text-align: center;
-}
-
-.about-page .clients-section .clients-content .clients-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 1.2rem;
-  color: var(--color-text-primary);
-}
-
-.about-page .clients-section .clients-content .clients-text {
-  font-size: 1rem;
-  color: var(--color-text-secondary);
-  margin-bottom: 1.2rem;
-  line-height: 1.6;
-}
-
-.about-page .clients-section .clients-content .clients-quote {
-  font-size: 1.1rem;
-  font-style: italic;
-  color: var(--color-primary);
-  margin: 1.2rem 0;
-}
-
-.about-page .clients-section .clients-content .clients-highlight {
-  font-size: 1rem;
-  color: var(--color-text-primary);
-  margin: 1.5rem 0;
-  font-weight: 500;
-}
-
-/* .about-page .clients-section .clients-content .clients-cta {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.about-page .clients-section .clients-content .clients-cta .cta-btn {
-  text-decoration: none;
-  padding: 0.7rem 1.2rem;
-  border-radius: 40px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
-} */
-
-/* .about-page .clients-section .clients-content .clients-cta .primary-btn {
-  background: var(--color-gradient);
-  color: #fff;
-  box-shadow: 0 4px 10px var(--shadow-dark);
-}
-
-.about-page .clients-section .clients-content .clients-cta .primary-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px var(--shadow-dark);
-}
-
-.about-page .clients-section .clients-content .clients-cta .secondary-btn {
-  border: 2px solid var(--color-primary);
-  color: var(--color-primary);
-  background: transparent;
-}
-
-.about-page .clients-section .clients-content .clients-cta .secondary-btn:hover {
-  background: var(--color-primary);
-  color: #fff;
-} */
-
 @media (max-width: 1200px) {
   .about-page .about-header {
     padding: 4rem 3rem;
@@ -267,8 +186,7 @@
   }
 
   .about-page .project-timeline,
-  .about-page .awards,
-  .about-page .clients-section {
+  .about-page .awards {
     padding: 5rem 3rem;
   }
 }

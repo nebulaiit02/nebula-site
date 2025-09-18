@@ -3,7 +3,7 @@ import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import ProductsPage from "./pages/Product/ProductsPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/Home/HomePage";
+import HomePage from "./Pages/Home/HomePage";
 import ContactPage from "./Pages/Contact/ContactPage";
 import ProductDetailPage from "./Pages/Product/Details/ProductDetailPage";
 import ServicePage from "./Pages/Service/ServicePage";

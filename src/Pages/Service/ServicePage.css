@@ -1,224 +1,335 @@
-
-body {
+/* ================= Base Layout ================= */
+.services-page {
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden; 
-  overflow-y: scroll;   
-  scrollbar-width: none; 
 }
 
-
-
-.service-page {
+.services-page section {
   width: 100%;
-  background-color: #0B0416;
-  color: #FFFFFF;
-  box-sizing: border-box;
+  padding: 5rem 2rem;
+  text-align: center;
+  height: 1024px;
+}
+
+/* ================= Black Sections ================= */
+.services-page .hero-section,
+.services-page .service-section,
+.services-page .future-section {
+  background-color: var(--color-bg-primary);
+  background-image: var(--img-bg-dots);
+  background-size: 20px 20px;
+  color: var(--color-text-primary);
+  padding-top: 15%;
+  height: 1024px;
+}
+
+/* ================= White Sections ================= */
+
+.services-page .blank-section {
+  background-color: var(--color-bg-secondary);
+  background-image: var(--img-bg-dots);
+  background-size: 20px 20px;
+  color: var(--color-text-dark);
+  height: 1024px;
 }
 
 
-.service-page .hero {
-  padding: 60px 5%;
+.services-page h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
-.service-page .hero h2 {
-  font-size: 28px;
+.services-page h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+}
+
+.services-page h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+
+.services-page p {
+  max-width: 850px;
+  margin: 0 auto 1rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: inherit;
+}
+
+
+.services-page .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+
+.services-page .card {
+  background: var(--color-dark-gray);
+  color: var(--color-text-primary);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 450px;
+  max-height: 500px;
+  flex: 1 1 300px;
+  text-align: left;
+  box-shadow: 0 6px 18px var(--shadow-dark);
+}
+
+.services-page .card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.services-page .card ul li {
+  margin-bottom: 0.6rem;
+  padding-left: 1.4rem;
+  position: relative;
+}
+
+.services-page .card ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+}
+
+.services-page .card button {
+  background: var(--color-primary);
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  color: var(--color-text-primary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.services-page .card button:hover {
+  background: var(--color-primary); /* keeping hover punchy */
+}
+
+
+.services-page .pricing-section {
+  position: relative;
+  background-color: var(--color-bg-secondary);
+  background-image: var(--img-bg-dots);
+  background-size: 20px 20px;
+  color: var(--color-text-dark);
+  padding: 6rem 2rem;
+  overflow: hidden;
+}
+
+
+.services-page .pricing-title {
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(8rem, 15vw, 12rem);
   font-weight: bold;
-  max-width: 800px;
-  line-height: 1.5;
+  color: var(--color-bg-primary);
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+  z-index: 0;
+}
+
+/* Pricing Cards */
+.services-page .pricing-card {
+  background:var(--card-transpernent);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--shadow-light);
+  border-radius: 12px;
+  padding: 40px 20px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  text-align: center;
+  top: 6rem;
+}
+
+/* Top Badge */
+.services-page .pricing-card h4 {
+  background: var(--color-bg-secondary);
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px var(--shadow-dark);
+}
+
+/* Price */
+.services-page .pricing-card .price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.services-page .pricing-card .price span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-left: 0.2rem;
+}
+
+/* Description */
+.services-page .pricing-card .desc {
+  color: var(--color-text-dark);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Button */
+.services-page .pricing-card button {
+  display: block;
+  width: 100%;
+  background: var(--color-primary);
+  border: none;
+  padding: 0.9rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px var(--shadow-dark);
+  transition: all 0.2s ease;
+}
+
+.services-page .pricing-card button:hover {
+  background: var(--color-bg-neutral);
+}
+
+/* Features List */
+.services-page .pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   text-align: left;
 }
 
-
-.service-page .features {
-  padding: 60px 5%;
+.services-page .pricing-card li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95rem;
 }
 
-.service-page .features h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 15px;
+.services-page .pricing-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-text-secondary);
+  font-size: 1rem;
 }
 
-.service-page .features p {
-  max-width: 500px;
-  margin: 8px 0;
-}
 
-.service-page .features .image-box.large {
-  margin-top: 30px;
-  width: 100%;
-  height: 300px;
-  background-color: white;
-  border-radius: 10px;
-}
-.service-page .features-list {
-  padding: 60px 5%;
-}
-
-.service-page .features-list h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.service-page .features-list .list-content {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-  padding-top: 80px;
-  flex-wrap: nowrap; 
-}
-
-.service-page .features-list .text-left {
-  flex: 1;
-  min-width: 250px;
-}
-
-.service-page .features-list .text-left p {
-  margin: 10px 0;
-}
-
-.service-page .features-list .image-box.medium {
-  flex: 1;
-  min-width: 250px;
-  height: 200px;
-  background-color: white;
-  border-radius: 10px;
-}
-
-.service-page .testimonials {
-  padding: 60px 5%;
-  text-align: center;
-}
-
-.service-page .testimonials h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-.service-page .testimonials .cards {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.service-page .testimonials .card-item {
-  flex: 0 1 280px;  
-  max-width: 300px;
-  display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  text-align: center;  
-}
-
-.service-page .testimonials .card-item .card {
-  width: 100%;
-  height: 150px;
-  background-color: white;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.service-page .testimonials .card-item p {
-  font-size: 14px;
-  color: #ccc;
-  margin: 0;
-}
 
 
 @media (max-width: 480px) {
-  .service-page .hero {
-    padding: 30px 5%;
-  }
-  .service-page .hero h2 {
-    font-size: 20px;
-    text-align: center;
+  .services-page h2 {
+    font-size: 1.6rem;
   }
 
-  .service-page .features,
-  .service-page .features-list,
-  .service-page .testimonials {
-    padding: 30px 5%;
+  .services-page p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0 1rem;
   }
 
-  .service-page .features-list .list-content {
-    flex-direction: column; 
-    gap: 20px;
-  }
-
-  .service-page .features-list .image-box.medium {
-    width: 100%; 
-    height: 300px; 
-  }
-
-  .service-page .testimonials .cards {
+  .services-page .cards {
     flex-direction: column;
-    gap: 20px;
+    gap: 1.5rem;
+  }
+
+
+  .services-page .card,
+  .services-page .pricing-card {
+    width: 100%;
+    padding: 1.2rem;
+  }
+
+  .services-page .pricing-card .price {
+    font-size: 2rem;
+  }
+
+  .services-page .pricing-title {
+    font-size: 5rem;
+    top: 6%;
   }
 }
+
 
 @media (min-width: 481px) and (max-width: 767px) {
-  .service-page .hero {
-    padding: 40px 5%;
-  }
-  .service-page .hero h2 {
-    font-size: 22px;
-    text-align: center;
+  .services-page h2 {
+    font-size: 1.8rem;
   }
 
-  .service-page .features,
-  .service-page .features-list,
-  .service-page .testimonials {
-    padding: 40px 5%;
+  .services-page p {
+    font-size: 1rem;
+    padding: 0 1.5rem;
   }
 
-  .service-page .features-list .list-content {
+  .services-page .cards {
     flex-direction: column;
-    gap: 25px;
+    align-items: center;
+    gap: 2rem;
   }
 
-  .service-page .features-list .image-box.medium {
-    width: 100%;
-    height: 200px;
+ 
+  .services-page .card,
+  .services-page .pricing-card {
+    width: 90%;
+    padding: 1.5rem;
   }
 
-  .service-page .testimonials .cards {
-    flex-direction: column;
-    gap: 25px;
+  .services-page .pricing-card .price {
+    font-size: 2.2rem;
+  }
+
+  .services-page .pricing-title {
+    font-size: 6rem;
+    top: 6%;
   }
 }
 
-/* Tablets (768px - 991px) */
+
 @media (min-width: 768px) and (max-width: 991px) {
-  .service-page .hero {
-    padding: 50px 5%;
-  }
-  .service-page .hero h2 {
-    font-size: 24px;
+  .services-page h2 {
+    font-size: 2.2rem;
   }
 
-  .service-page .features,
-  .service-page .features-list,
-  .service-page .testimonials {
-    padding: 50px 5%;
+  .services-page p {
+    font-size: 1.05rem;
   }
 
-  .service-page .features-list .list-content {
-    flex-direction: column;
-    gap: 30px;
+  .services-page .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
   }
 
-  .service-page .features-list .image-box.medium {
-    width: 100%;
-    height: 220px;
+  .services-page .card,
+  .services-page .pricing-card {
+    flex: 1 1 45%;
+    max-width: 45%;
   }
 
-  .service-page .testimonials .card-item {
-    flex: 1 1 calc(50% - 15px);
-    max-width: 50%;
+  .services-page .pricing-card .price {
+    font-size: 2.3rem;
+  }
+
+  .services-page .pricing-title {
+    font-size: 8rem;
   }
 }

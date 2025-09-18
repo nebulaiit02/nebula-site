@@ -1,39 +1,40 @@
+
 .home-wrapper {
   width: 100%;
-  background-color: #000;
-  color: whitesmoke;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
 }
 
 /* =======================
    Pricing Section
 ======================= */
-.pricing {
+.home-wrapper .pricing {
   position: relative;
   width: 100%;
   padding: 150px 20px 80px;
-  background-color: #000;
-  background-image: radial-gradient(#222 1px, transparent 1px);
+  background-color: var(--color-bg-primary);
+  background-image: var(--img-bg-dots);
   background-size: 20px 20px;
-  color: whitesmoke;
+  color: var(--color-text-primary);
   overflow: hidden;
   text-align: center;
 }
 
-.pricing-background-text {
+.home-wrapper .pricing-background-text {
   position: absolute;
   top: 22%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: clamp(8rem, 15vw, 12rem);
   font-weight: bold;
-  color: #fff;
+  color: var(--color-text-primary);
   pointer-events: none;
   user-select: none;
   white-space: nowrap;
   z-index: 0;
 }
 
-.pricing-content {
+.home-wrapper .pricing-content {
   position: relative;
   z-index: 1;
   max-width: 1200px;
@@ -41,57 +42,58 @@
   text-align: center;
 }
 
-.pricing-cards {
+.home-wrapper .pricing-cards {
   display: flex;
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
 }
 
-.pricing-card {
+.home-wrapper .pricing-card {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--shadow-light);
   border-radius: 12px;
   padding: 40px 20px;
   width: 280px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   text-align: center;
+  color: var(--color-text-primary);
 }
 
-.pricing-card:hover {
+.home-wrapper .pricing-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 20px var(--shadow-light);
 }
 
-.plan-name {
+.home-wrapper .plan-name {
   position: absolute;
   top: 15px;
   left: 15px;
-  background: white;
-  color: black;
+  background: var(--color-bg-secondary);
+  color: var(--color-text-dark);
   font-size: 0.8rem;
   font-weight: bold;
   padding: 3px 10px;
   border-radius: 20px;
 }
 
-.plan-price {
+.home-wrapper .plan-price {
   font-size: 1.8rem;
   font-weight: bold;
   margin: 50px 0 10px 0;
 }
 
-.plan-description {
+.home-wrapper .plan-description {
   font-size: 0.9rem;
-  color: #aaa;
+  color: var(--color-text-secondary);
   margin-bottom: 20px;
 }
 
-.plan-button {
-  background-color: #000;
-  color: white;
+.home-wrapper .plan-button {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
   border: none;
   border-radius: 25px;
   padding: 12px 20px;
@@ -101,18 +103,18 @@
   transition: background 0.3s ease;
 }
 
-.plan-button:hover {
-  background-color: #333;
+.home-wrapper .plan-button:hover {
+  background-color: var(--color-dark-gray);
 }
 
-.plan-features {
+.home-wrapper .plan-features {
   list-style: none;
   padding: 0;
   margin: 0;
   text-align: left;
 }
 
-.plan-features li {
+.home-wrapper .plan-features li {
   margin: 8px 0;
   font-size: 0.9rem;
 }
@@ -120,145 +122,145 @@
 /* =======================
    Testimonial Section
 ======================= */
-.testimonial {
-  background-color: #fff; 
-  background-image: radial-gradient(#eee 1px, transparent 1px);
+.home-wrapper .testimonial {
+  background-color: var(--color-bg-secondary);
+  background-image: var(--img-bg-dots);
   background-size: 20px 20px;
-  color: #333;
+  color: var(--color-text-dark);
   padding: 250px 20px;
   display: flex;
   justify-content: center;
 }
 
-.testimonial-card {
+.home-wrapper .testimonial-card {
   display: flex;
   align-items: flex-start;
   gap: 150px;
   max-width: 800px;
 }
 
-.testimonial-image img {
+.home-wrapper .testimonial-image img {
   width: 150px;
   height: 150px;
   border-radius: 15px;
   object-fit: cover;
-  background-color: #ddd; 
+  background-color: var(--color-bg-neutral);
 }
 
-.testimonial-content {
+.home-wrapper .testimonial-content {
   font-family: 'Courier New', Courier, monospace;
   max-width: 600px;
 }
 
-.stars {
-  color: #FF6600;
+.home-wrapper .stars {
+  color: var(--color-primary);
   font-size: 1.2rem;
 }
 
-
-.client-name {
+.home-wrapper .client-name {
   font-weight: bold;
-  color: #333;
+  color: var(--color-text-dark);
 }
 
-.separator {
+.home-wrapper .separator {
   margin: 0 5px;
   color: #ccc;
 }
 
-.client-title {
+.home-wrapper .client-title {
   font-size: 1.3rem;
-  color: #666;
+  color: var(--color-text-secondary);
 }
 
-.social-icons {
+.home-wrapper .social-icons {
   margin-top: 15px;
 }
 
-.social-icons a {
+.home-wrapper .social-icons a {
   margin-right: 12px;
-  color: #FF6600;
+  color: var(--color-primary);
   font-size: 1.5rem;
   transition: opacity 0.3s;
 }
-.social-icons a:hover {
+
+.home-wrapper .social-icons a:hover {
   opacity: 0.7;
 }
 
 /* =======================
    Services Section
 ======================= */
-.services-section {
-  background: #ffffff;
-  color: #131212;
+.home-wrapper .services-section {
+  background: var(--color-bg-secondary);
+  background-image: var(--img-bg-dots);
+  background-size: 20px 20px;
+  color: var(--color-text-dark);
   padding: 64px 5%;
   text-align: center;
 }
 
-.services-section h2 {
+.home-wrapper .services-section h2 {
   font-size: clamp(2rem, 3vw, 2.4rem);
   margin-bottom: 40px;
 }
 
-.services-container {
+.home-wrapper .services-container {
   display: flex;
   justify-content: center;
   gap: 37px;
   flex-wrap: wrap;
 }
 
-.service-box {
+.home-wrapper .service-box {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Title card ke upar */
-.service-title {
+.home-wrapper .service-title {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #f3ebeb;
+  color: var(--color-text-primary);
   margin-bottom: 12px;
 }
 
-/* Card white background */
-.service-card {
+.home-wrapper .service-card {
   width: clamp(220px, 28vw, 260px);
-  background: #fff;
-  border: 1px solid #ccc;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
   border-radius: 12px;
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
 }
 
-.service-card:hover {
+.home-wrapper .service-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px var(--shadow-dark);
 }
 
-.service-image {
-  background: #f2f2f2;
+.home-wrapper .service-image {
+  background: var(--color-bg-neutral);
   height: 150px;
   border-radius: 8px;
   margin-bottom: 15px;
 }
 
-.service-name {
+.home-wrapper .service-name {
   font-size: 1rem;
-  color: #555;
+  color: var(--color-text-secondary);
   margin-bottom: 6px;
 }
 
-.service-desc {
+.home-wrapper .service-desc {
   font-size: 0.9rem;
-  color: #333;
+  color: var(--color-text-dark);
   margin-bottom: 20px;
 }
 
-.visit-btn {
-  background: #000;
-  color: #fff;
+.home-wrapper .visit-btn {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
   border: none;
   border-radius: 25px;
   padding: 10px 20px;
@@ -267,13 +269,13 @@
   transition: background 0.3s ease;
 }
 
-.visit-btn:hover {
-  background: #ff6600;
+.home-wrapper .visit-btn:hover {
+  background: var(--color-primary);
 }
 
-.view-all-btn {
-  background: #e64e08;
-  color: #fff;
+.home-wrapper .view-all-btn {
+  background: var(--color-primary);
+  color: var(--color-text-primary);
   border: none;
   border-radius: 25px;
   padding: 12px 25px;
@@ -282,7 +284,7 @@
   transition: background 0.3s ease;
 }
 
-.view-all-btn:hover {
+.home-wrapper .view-all-btn:hover {
   background: #c94105;
 }
 
@@ -290,53 +292,37 @@
    Responsive
 ======================= */
 @media (max-width: 768px) {
-  .pricing-cards {
+  .home-wrapper .pricing-cards {
     flex-direction: column;
     align-items: center;
   }
-  .testimonial-card {
+  .home-wrapper .testimonial-card {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 30px;
   }
-  .testimonial-content {
+  .home-wrapper .testimonial-content {
     max-width: 100%;
   }
-  .team-members {
-    flex-direction: column;
-  }
-  .services-container {
+  .home-wrapper .services-container {
     flex-direction: column;
     align-items: center;
   }
 }
 
 @media (max-width: 480px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .hero p {
-    font-size: 1.2rem;
-  }
-  .btn-primary {
-    padding: 12px 24px;
-    font-size: 0.9rem;
-  }
-  .tech-icons img {
-    width: 60px;
-    height: 50px;
-  }
-  .pricing-background-text {
+  .home-wrapper .pricing-background-text {
     font-size: clamp(5rem, 12vw, 8rem);
   }
-  .testimonial-image img {
+  .home-wrapper .testimonial-image img {
     width: 120px;
     height: 120px;
   }
-  .quote {
+  .home-wrapper .quote {
     font-size: 0.9rem;
   }
-  .stars {
+  .home-wrapper .stars {
     font-size: 1rem;
   }
 }

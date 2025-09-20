@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { FaHome, FaInfoCircle, FaCog, FaEnvelope } from "react-icons/fa";
 import "./Header.css";
+import logo from "/src/assets/logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -15,8 +16,7 @@ const Header = () => {
     { name: "Contact Us", path: "/contact-us", icon: <FaEnvelope className="icon" /> },
   ];
 
-  const activeTab =
-    tabs.find((tab) => tab.path === location.pathname)?.name || "Home";
+  const activeTab = tabs.find((tab) => tab.path === location.pathname) || tabs[0];
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 100);
@@ -26,60 +26,54 @@ const Header = () => {
 
   return (
     <>
-      {/* ===== Desktop Headers (hidden on mobile) ===== */}
-      <div className="desktop-header">
-        {!isScrolled && (
-          <header className="navbar-wrapper">
-            <div className="nav-logo">
-              <span>NEBULA</span>
-            </div>
-            <nav className="nav-links">
-              {tabs.map((tab) => (
-                <NavLink
-                  key={tab.path}
-                  to={tab.path}
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active" : "nav-link"
-                  }
-                >
-                  {tab.name}
-                </NavLink>
-              ))}
-            </nav>
-          </header>
-        )}
+      {/* Desktop Full Header */}
+      <header className={`navbar-wrapper ${isScrolled ? "hide" : ""}`}>
+        <div className="nav-logo">
+          <img src={logo} alt="Nebula Logo" className="nav-logo-img" />
+        </div>
+        <nav className="nav-links">
+          {tabs.map((tab) => (
+            <NavLink
+              key={tab.path}
+              to={tab.path}
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              {tab.name}
+            </NavLink>
+          ))}
+        </nav>
+      </header>
 
-        {isScrolled && (
-          <div
-            className={`compact-navbar ${isHovered ? "expanded" : ""}`}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            <div className="compact-logo">
-              <span>NEBULA</span>
-            </div>
-            <div className="compact-menu">
-              {isHovered ? (
-                tabs.map((tab) => (
-                  <NavLink
-                    key={tab.path}
-                    to={tab.path}
-                    className={({ isActive }) =>
-                      isActive ? "compact-link active" : "compact-link"
-                    }
-                  >
-                    {tab.name}
-                  </NavLink>
-                ))
-              ) : (
-                <span className="compact-link active">{activeTab}</span>
-              )}
-            </div>
-          </div>
+      {/* Compact Floating Header */}
+      <div
+        className={`compact-navbar ${isScrolled ? "show" : ""}`}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <div className="compact-logo">NEBULA</div>
+        <div className={`compact-menu ${isHovered ? "open" : ""}`}>
+          {tabs.map((tab) => (
+            <NavLink
+              key={tab.path}
+              to={tab.path}
+              className={({ isActive }) =>
+                isActive ? "compact-link active" : "compact-link"
+              }
+            >
+              {tab.name}
+            </NavLink>
+          ))}
+        </div>
+        {!isHovered && (
+          <NavLink to={activeTab.path} className="compact-link active">
+            {activeTab.name}
+          </NavLink>
         )}
       </div>
 
-      {/* ===== Mobile Bottom Navbar ===== */}
+      {/* Mobile Bottom Navbar */}
       <div className="mobile-navbar">
         {tabs.map((tab) => (
           <NavLink
